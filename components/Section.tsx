@@ -25,7 +25,7 @@ export default function Section({
       className={[
         grounds[ground],
         topRule ? (ground === 'band' ? 'border-t border-gold-line' : 'border-t border-line') : '',
-        'px-5 py-12 sm:px-8 sm:py-16 lg:px-[72px] lg:py-20',
+        'px-5 py-10 sm:px-8 sm:py-12 lg:px-[72px] lg:py-14',
         className,
       ].join(' ')}
     >

@@ -30,7 +30,7 @@ export default async function InsightDetailPage({ params }: { params: Promise<{ 
             ← All insights
           </Link>
           <div className="mb-4 text-[10.5px] font-medium uppercase leading-relaxed tracking-[0.2em] text-gold-text">{article.category}</div>
-          <h1 className="m-0 mb-8 font-display text-[clamp(26px,3.2vw,38px)] font-semibold leading-[1.15] tracking-[-0.01em] text-ink text-pretty">
+          <h1 className="m-0 mb-8 font-display text-[clamp(22px,2vw,26px)] font-semibold leading-[1.15] tracking-[-0.01em] text-ink text-pretty">
             {article.title}
           </h1>
           <div className="relative mb-9 aspect-[3/2] w-full overflow-hidden bg-sand">

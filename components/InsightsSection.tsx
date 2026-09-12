@@ -8,10 +8,10 @@ export default function InsightsSection({ limit = 3 }: { limit?: number }) {
   return (
     <Section>
       <Reveal>
-        <div className="mb-8 flex flex-wrap items-end justify-between gap-6 lg:mb-10">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-6 lg:mb-8">
           <div>
             <div className="label mb-[18px]">Insights</div>
-            <h2 className="m-0 font-display text-[clamp(26px,3.2vw,40px)] font-semibold leading-[1.1] text-ink">
+            <h2 className="m-0 font-display text-[clamp(22px,2vw,27px)] font-semibold leading-[1.1] text-ink">
               Reading, before you decide
             </h2>
           </div>

@@ -15,10 +15,10 @@ export default function CTASection() {
             'linear-gradient(100deg, rgba(233,219,192,.94) 0%, rgba(233,219,192,.78) 62%, rgba(233,219,192,.62) 100%)',
         }}
       />
-      <div className="relative mx-auto max-w-shell px-5 py-14 sm:px-8 lg:px-[72px] lg:py-20">
+      <div className="relative mx-auto max-w-shell px-5 py-12 sm:px-8 lg:px-[72px] lg:py-16">
         <div className="max-w-[760px]">
           <div className="label mb-5">Begin here</div>
-          <h2 className="m-0 mb-6 font-display text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
+          <h2 className="m-0 mb-6 font-display text-[clamp(26px,2.4vw,34px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
             Sometimes, clarity begins with one conversation.
           </h2>
           <p className="m-0 mb-9 max-w-[52ch] text-[16.5px] leading-[1.8] text-body text-pretty">

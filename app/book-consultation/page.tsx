@@ -21,7 +21,7 @@ export default function BookConsultationPage() {
       <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <div className="label mb-[22px]">Book a Consultation</div>
-          <h1 className="m-0 mb-6 font-display text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 font-display text-[clamp(26px,2.4vw,34px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
             One session, one honest conversation
           </h1>
           <p className="m-0 mb-9 max-w-[44ch] text-[16.5px] leading-[1.8] text-body text-pretty">

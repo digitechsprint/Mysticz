@@ -28,7 +28,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <div className="grid items-center gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[22px]">{service.num} — {service.title}</div>
-            <h1 className="m-0 mb-[22px] max-w-[20ch] font-display text-[clamp(32px,4vw,52px)] font-semibold leading-[1.07] tracking-[-0.015em] text-ink text-pretty">
+            <h1 className="m-0 mb-[22px] max-w-[20ch] font-display text-[clamp(27px,2.5vw,36px)] font-semibold leading-[1.07] tracking-[-0.015em] text-ink text-pretty">
               {service.heroHeading}
             </h1>
             <p className="m-0 mb-8 max-w-[50ch] text-[17px] leading-[1.75] text-body text-pretty">{service.heroCopy}</p>
@@ -46,7 +46,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <div className="grid gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[18px]">Overview</div>
-            <h2 className="m-0 mb-5 font-display text-[clamp(24px,3vw,36px)] font-semibold leading-[1.12] text-ink text-pretty">
+            <h2 className="m-0 mb-5 font-display text-[clamp(21px,1.8vw,25px)] font-semibold leading-[1.12] text-ink text-pretty">
               {service.overviewHeading}
             </h2>
             {service.overview.map((p) => (
@@ -70,7 +70,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       <Section ground="band" topRule>
         <div className="flex flex-wrap items-center justify-between gap-8">
-          <h2 className="m-0 max-w-[24ch] font-display text-[clamp(24px,3vw,36px)] font-semibold leading-[1.12] text-ink text-pretty">
+          <h2 className="m-0 max-w-[24ch] font-display text-[clamp(21px,1.8vw,25px)] font-semibold leading-[1.12] text-ink text-pretty">
             {service.closing}
           </h2>
           <Link href="/book-consultation" className="btn btn-primary">{service.closingCta}</Link>

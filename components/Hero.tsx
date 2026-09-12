@@ -5,20 +5,20 @@ import Reveal from './Reveal';
 export default function Hero() {
   return (
     <section className="border-b border-line bg-[linear-gradient(180deg,#FBF7EE_0%,#F6EFE0_100%)]">
-      <div className="mx-auto grid max-w-shell items-center gap-9 px-5 pb-12 pt-10 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-16 lg:pt-16">
+      <div className="mx-auto grid max-w-shell items-center gap-9 px-5 pb-10 pt-8 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-14 lg:pt-12">
         <Reveal>
-          <div className="mb-7 flex items-center gap-3">
+          <div className="mb-6 flex items-center gap-3">
             <span className="block h-px w-[34px] bg-gold-line" />
             <span className="label !font-semibold" style={{ letterSpacing: '0.26em' }}>
               Vastu • Numerology • Holistic Wellness
             </span>
           </div>
 
-          <h1 className="m-0 mb-6 font-display text-[clamp(36px,4.4vw,60px)] font-semibold leading-[1.08] tracking-[-0.02em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 font-display text-[clamp(30px,3vw,44px)] font-semibold leading-[1.08] tracking-[-0.02em] text-ink text-pretty">
             Create spaces that support the life you want to live.
           </h1>
 
-          <p className="m-0 mb-9 max-w-[48ch] text-[17.5px] leading-[1.75] text-body text-pretty">
+          <p className="m-0 mb-7 max-w-[48ch] text-[17.5px] leading-[1.75] text-body text-pretty">
             Practical Vastu and personalised guidance to bring greater balance, harmony and clarity to your home,
             your workplace and your life.
           </p>
