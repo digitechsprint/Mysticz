@@ -8,7 +8,7 @@ export default function VastuSection() {
   return (
     <Section>
       <Reveal>
-        <div className="mb-9 max-w-[760px] lg:mb-[60px]">
+        <div className="mb-9 max-w-[760px] lg:mb-10">
           <div className="label mb-[18px]">Vastu Consultancy</div>
           <h2 className="m-0 mb-5 font-display text-[clamp(32px,4.4vw,58px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
             Your premises hold energy. Let them work for your business.

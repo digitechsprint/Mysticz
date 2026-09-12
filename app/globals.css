@@ -5,7 +5,7 @@
 :root { color-scheme: light; }
 
 html { scroll-behavior: smooth; }
-body { background: #F7F1E6; color: #16130F; -webkit-font-smoothing: antialiased; }
+body { background: #F8F2E8; color: #16130F; -webkit-font-smoothing: antialiased; }
 a { color: #3E5C1B; text-decoration: none; }
 a:hover { color: #8F6718; }
 

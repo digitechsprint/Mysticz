@@ -5,10 +5,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ivory: '#F7F1E6',
-        sand: '#EFE6D5',
-        band: '#E9DBC0',
-        footer: '#EADFC9',
+        ivory: '#F8F2E8',
+        sand: '#EFE3CC',
+        band: '#E4CFA0',
+        footer: '#E2CD9B',
         card: '#FFFCF5',
         ink: '#16130F',
         'ink-2': '#2A261F',

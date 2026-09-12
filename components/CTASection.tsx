@@ -15,7 +15,7 @@ export default function CTASection() {
             'linear-gradient(100deg, rgba(233,219,192,.94) 0%, rgba(233,219,192,.78) 62%, rgba(233,219,192,.62) 100%)',
         }}
       />
-      <div className="relative mx-auto max-w-shell px-5 py-20 sm:px-8 lg:px-[72px] lg:py-[150px]">
+      <div className="relative mx-auto max-w-shell px-5 py-14 sm:px-8 lg:px-[72px] lg:py-20">
         <div className="max-w-[760px]">
           <div className="label mb-5">Begin here</div>
           <h2 className="m-0 mb-6 font-display text-[clamp(34px,4.8vw,62px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">

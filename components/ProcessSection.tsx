@@ -7,7 +7,7 @@ export default function ProcessSection({ ground = 'sand', heading = 'Four steps,
     <Section ground={ground} topRule={ground === 'sand'}>
       <Reveal>
         <div className="label mb-[18px]">How it works</div>
-        <h2 className="m-0 mb-10 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] text-ink lg:mb-[68px]">
+        <h2 className="m-0 mb-10 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] text-ink lg:mb-12">
           {heading}
         </h2>
       </Reveal>

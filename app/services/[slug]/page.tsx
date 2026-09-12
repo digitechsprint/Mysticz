@@ -42,7 +42,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </Section>
 
-      <Section ground="band" topRule className="!mt-12 lg:!mt-16">
+      <Section ground="band" topRule className="!mt-8 lg:!mt-10">
         <div className="grid gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[18px]">Overview</div>

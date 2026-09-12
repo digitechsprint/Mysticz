@@ -7,7 +7,7 @@ export default function ServicesGrid() {
   return (
     <Section ground="sand" topRule>
       <Reveal>
-        <div className="mb-9 flex flex-wrap items-end justify-between gap-6 lg:mb-16">
+        <div className="mb-9 flex flex-wrap items-end justify-between gap-6 lg:mb-10">
           <div>
             <div className="label mb-[18px]">Services</div>
             <h2 className="m-0 font-display text-[clamp(32px,4.4vw,58px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink">

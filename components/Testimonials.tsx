@@ -10,7 +10,7 @@ export default function Testimonials() {
 
   return (
     <Section>
-      <div className="mb-8 flex flex-wrap items-end justify-between gap-6 lg:mb-14">
+      <div className="mb-8 flex flex-wrap items-end justify-between gap-6 lg:mb-10">
         <div>
           <div className="label mb-[18px]">Testimonials</div>
           <h2 className="m-0 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] text-ink">

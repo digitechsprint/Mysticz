@@ -4,8 +4,8 @@ import Reveal from './Reveal';
 
 export default function Hero() {
   return (
-    <section className="border-b border-line bg-ivory">
-      <div className="mx-auto grid max-w-shell items-center gap-9 px-5 pb-16 pt-14 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-28 lg:pt-26">
+    <section className="border-b border-line bg-[linear-gradient(180deg,#FBF7EE_0%,#F6EFE0_100%)]">
+      <div className="mx-auto grid max-w-shell items-center gap-9 px-5 pb-12 pt-10 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-16 lg:pt-16">
         <Reveal>
           <div className="mb-7 flex items-center gap-3">
             <span className="block h-px w-[34px] bg-gold-line" />

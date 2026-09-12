@@ -14,14 +14,18 @@ export default function Section({
   className?: string;
   id?: string;
 }) {
-  const grounds = { ivory: 'bg-ivory', sand: 'bg-sand', band: 'bg-band' } as const;
+  const grounds = {
+    ivory: 'bg-[linear-gradient(180deg,#FBF7EE_0%,#F6EFE0_100%)]',
+    sand: 'bg-[linear-gradient(180deg,#F3E9D3_0%,#EBDEC0_100%)]',
+    band: 'bg-[linear-gradient(180deg,#E9DAB3_0%,#E0C88F_100%)]',
+  } as const;
   return (
     <section
       id={id}
       className={[
         grounds[ground],
         topRule ? (ground === 'band' ? 'border-t border-gold-line' : 'border-t border-line') : '',
-        'px-5 py-16 sm:px-8 sm:py-24 lg:px-[72px] lg:py-[120px]',
+        'px-5 py-12 sm:px-8 sm:py-16 lg:px-[72px] lg:py-20',
         className,
       ].join(' ')}
     >
