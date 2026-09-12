@@ -8,7 +8,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       href={'/services/' + service.slug}
       className="group flex flex-col bg-ivory text-ink transition-all duration-500 ease-premium hover:-translate-y-1.5 hover:bg-card hover:shadow-[0_18px_44px_rgba(60,48,20,.10)]"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-sand">
+      <div className="relative h-48 w-full overflow-hidden bg-sand">
         <Image
           src={service.image}
           alt={service.imageAlt}
