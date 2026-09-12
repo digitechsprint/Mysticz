@@ -5,7 +5,7 @@ import Reveal from './Reveal';
 export default function Hero() {
   return (
     <section className="border-b border-line bg-[linear-gradient(180deg,#FBF7EE_0%,#F6EFE0_100%)]">
-      <div className="mx-auto grid max-w-shell items-center gap-9 px-5 pb-10 pt-8 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-14 lg:pt-12">
+      <div className="mx-auto grid max-w-shell items-start gap-9 px-5 pb-10 pt-8 sm:px-8 lg:grid-cols-2 lg:gap-[76px] lg:px-[72px] lg:pb-14 lg:pt-12">
         <Reveal>
           <div className="mb-6 flex items-center gap-3">
             <span className="block h-px w-[34px] bg-gold-line" />

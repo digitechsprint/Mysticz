@@ -6,7 +6,7 @@ import Section from './Section';
 export default function IntroSection() {
   return (
     <Section>
-      <div className="grid items-center gap-9 lg:grid-cols-2 lg:gap-[84px]">
+      <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[84px]">
         <Reveal>
           <div className="relative aspect-square w-full bg-sand">
             <Image src="/images/sessions-individual.png" alt="A personalised consultation in progress" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />

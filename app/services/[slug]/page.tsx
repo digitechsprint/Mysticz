@@ -25,7 +25,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   return (
     <>
       <Section className="!pb-0 sm:!pb-0 lg:!pb-0">
-        <div className="grid items-center gap-9 lg:grid-cols-2 lg:gap-[72px]">
+        <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[22px]">{service.num} — {service.title}</div>
             <h1 className="m-0 mb-[22px] max-w-[20ch] font-display text-[clamp(27px,2.5vw,36px)] font-semibold leading-[1.07] tracking-[-0.015em] text-ink text-pretty">
