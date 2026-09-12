@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="pointer-events-none absolute -left-3.5 -right-3.5 top-2/3 h-px bg-line" />
             <div className="pointer-events-none absolute -bottom-3.5 -top-3.5 left-1/3 w-px bg-line" />
             <div className="pointer-events-none absolute -bottom-3.5 -top-3.5 left-2/3 w-px bg-line" />
-            <div className="relative aspect-[4/5] w-full bg-sand">
+            <div className="relative aspect-[6/5] w-full bg-sand">
               <Image
                 src="/images/bhavika-portrait.png"
                 alt="Bhavika Gupta, Vastu consultant and numerologist"
