@@ -31,9 +31,9 @@ export default function ServicesPage() {
             <Reveal key={service.slug} delay={i * 0.06}>
               <Link
                 href={'/services/' + service.slug}
-                className="grid grid-cols-1 bg-ivory text-ink transition-all duration-500 ease-premium hover:bg-card hover:shadow-[0_18px_44px_rgba(60,48,20,.09)] sm:grid-cols-2"
+                className="grid grid-cols-1 items-center bg-ivory text-ink transition-all duration-500 ease-premium hover:bg-card hover:shadow-[0_18px_44px_rgba(60,48,20,.09)] sm:grid-cols-2"
               >
-                <div className="relative min-h-[240px] w-full overflow-hidden bg-sand">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-sand">
                   <Image src={service.image} alt={service.imageAlt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
                 </div>
                 <div className="flex flex-col justify-center p-7 lg:p-12">
