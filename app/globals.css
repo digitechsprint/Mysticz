@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+html { scroll-behavior: smooth; }
+body { background: #F7F1E6; color: #16130F; -webkit-font-smoothing: antialiased; }
+a { color: #3E5C1B; text-decoration: none; }
+a:hover { color: #8F6718; }
+
+/* Small uppercase label — used for every section eyebrow */
+.label {
+  font-weight: 500;
+  font-size: 10.5px;
+  line-height: 1.4;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #7A5C22;
+}
+
+/* Primary / secondary CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 11.5px;
+  line-height: 1.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 19px 34px;
+  border: 1px solid transparent;
+  transition: background .35s ease, border-color .35s ease, color .35s ease;
+}
+.btn-primary { background: #B8862B; border-color: #B8862B; color: #16130F; }
+.btn-primary:hover { background: #8F6718; border-color: #8F6718; color: #F7F1E6; }
+.btn-secondary { border-color: #C4B698; color: #2A261F; }
+.btn-secondary:hover { border-color: #8F6718; color: #8F6718; }
+
+@keyframes riseIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+/* Opening veil */
+@keyframes veilOut { 0%, 70% { opacity: 1 } 100% { opacity: 0; visibility: hidden } }
+@keyframes markRise { 0% { opacity: 0; transform: translateY(16px) scale(.965) } 100% { opacity: 1; transform: none } }
+@keyframes ruleGrow { 0% { width: 0; opacity: 0 } 100% { width: 170px; opacity: 1 } }
+@keyframes tagIn { 0%, 30% { opacity: 0; letter-spacing: .2em } 100% { opacity: 1; letter-spacing: .34em } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
