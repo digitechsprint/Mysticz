@@ -10,7 +10,7 @@ export default function VastuSection() {
       <Reveal>
         <div className="mb-9 max-w-[760px] lg:mb-10">
           <div className="label mb-[18px]">Vastu Consultancy</div>
-          <h2 className="m-0 mb-5 font-display text-[clamp(32px,4.4vw,58px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
+          <h2 className="m-0 mb-5 font-display text-[clamp(28px,3.6vw,44px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
             Your premises hold energy. Let them work for your business.
           </h2>
           <p className="m-0 text-[16.5px] leading-[1.8] text-body text-pretty">

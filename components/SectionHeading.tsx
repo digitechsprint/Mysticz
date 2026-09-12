@@ -14,7 +14,7 @@ export default function SectionHeading({
   return (
     <div>
       {label && <div className="label mb-[18px]">{label}</div>}
-      <Tag className="m-0 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] tracking-[-0.01em] text-ink text-pretty">
+      <Tag className="m-0 font-display text-[clamp(26px,3.2vw,40px)] font-semibold leading-[1.1] tracking-[-0.01em] text-ink text-pretty">
         {title}
       </Tag>
       {children}

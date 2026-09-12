@@ -16,7 +16,7 @@ export default function InsightsPage() {
       <Section className="!pb-9 sm:!pb-12 lg:!pb-16">
         <Reveal>
           <div className="label mb-[22px]">Insights</div>
-          <h1 className="m-0 mb-6 max-w-[22ch] font-display text-[clamp(40px,5.4vw,74px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 max-w-[22ch] font-display text-[clamp(34px,4.2vw,56px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
             Notes on space, numbers and wellbeing
           </h1>
           <p className="m-0 max-w-[52ch] text-[17px] leading-[1.75] text-body">

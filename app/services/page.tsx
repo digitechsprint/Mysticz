@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Section className="!pb-9 sm:!pb-12 lg:!pb-16">
         <Reveal>
           <div className="label mb-[22px]">Services</div>
-          <h1 className="m-0 mb-6 max-w-[22ch] font-display text-[clamp(40px,5.4vw,74px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 max-w-[22ch] font-display text-[clamp(34px,4.2vw,56px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
             Ways we can help
           </h1>
           <p className="m-0 max-w-[54ch] text-[17px] leading-[1.75] text-body text-pretty">
@@ -42,7 +42,7 @@ export default function ServicesPage() {
                     <span className="block h-px w-6 bg-gold-line" />
                     <span className="text-[11.5px] uppercase tracking-[0.18em] text-muted">{service.tag}</span>
                   </div>
-                  <h2 className="m-0 mb-4 font-display text-[clamp(28px,3.2vw,42px)] font-semibold leading-[1.15] text-ink">{service.title}</h2>
+                  <h2 className="m-0 mb-4 font-display text-[clamp(24px,2.8vw,34px)] font-semibold leading-[1.15] text-ink">{service.title}</h2>
                   <p className="m-0 mb-[22px] max-w-[52ch] text-[15.5px] leading-[1.8] text-body text-pretty">{service.blurb}</p>
                   <div className="mb-[26px] flex flex-wrap gap-2">
                     {service.subs.map((sub) => (

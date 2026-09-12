@@ -9,7 +9,7 @@ export default function WhyMysticz() {
         <Reveal>
           <div className="lg:sticky lg:top-[120px]">
             <div className="label mb-[18px]">Why Mysticz</div>
-            <h2 className="m-0 mb-5 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] text-ink text-pretty">
+            <h2 className="m-0 mb-5 font-display text-[clamp(26px,3.2vw,40px)] font-semibold leading-[1.1] text-ink text-pretty">
               Guidance that is personal, practical and grounded
             </h2>
             <p className="m-0 max-w-[38ch] text-base leading-[1.8] text-body">

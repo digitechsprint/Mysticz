@@ -14,7 +14,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="m-0 mb-6 font-display text-[clamp(42px,5.6vw,78px)] font-semibold leading-[1.08] tracking-[-0.02em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 font-display text-[clamp(36px,4.4vw,60px)] font-semibold leading-[1.08] tracking-[-0.02em] text-ink text-pretty">
             Create spaces that support the life you want to live.
           </h1>
 

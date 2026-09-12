@@ -6,7 +6,7 @@ export default function NotFound() {
     <Section>
       <div className="max-w-[52ch]">
         <div className="label mb-[18px]">404</div>
-        <h1 className="m-0 mb-5 font-display text-[clamp(32px,4.4vw,54px)] font-semibold leading-[1.12] text-ink">
+        <h1 className="m-0 mb-5 font-display text-[clamp(28px,3.4vw,42px)] font-semibold leading-[1.12] text-ink">
           This page has wandered off.
         </h1>
         <p className="m-0 mb-8 text-base leading-[1.8] text-body">

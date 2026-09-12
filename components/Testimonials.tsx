@@ -13,7 +13,7 @@ export default function Testimonials() {
       <div className="mb-8 flex flex-wrap items-end justify-between gap-6 lg:mb-10">
         <div>
           <div className="label mb-[18px]">Testimonials</div>
-          <h2 className="m-0 font-display text-[clamp(30px,4vw,52px)] font-semibold leading-[1.1] text-ink">
+          <h2 className="m-0 font-display text-[clamp(26px,3.2vw,40px)] font-semibold leading-[1.1] text-ink">
             Words from those who reached out
           </h2>
         </div>
@@ -26,7 +26,7 @@ export default function Testimonials() {
       <div className="grid items-start gap-7 border-t border-line pt-8 lg:grid-cols-2 lg:gap-16 lg:pt-13">
         <div>
           <div className="mb-5 font-display text-[64px] font-semibold leading-[0.6] text-gold-text">“</div>
-          <blockquote className="m-0 mb-7 font-display text-[clamp(22px,2.4vw,32px)] font-medium leading-[1.45] text-ink text-pretty">
+          <blockquote className="m-0 mb-7 font-display text-[clamp(19px,1.8vw,25px)] font-medium leading-[1.45] text-ink text-pretty">
             {'“' + current.quote + '”'}
           </blockquote>
           <div className="flex flex-wrap items-center gap-3.5">

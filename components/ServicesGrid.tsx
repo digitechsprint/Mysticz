@@ -10,7 +10,7 @@ export default function ServicesGrid() {
         <div className="mb-9 flex flex-wrap items-end justify-between gap-6 lg:mb-10">
           <div>
             <div className="label mb-[18px]">Services</div>
-            <h2 className="m-0 font-display text-[clamp(32px,4.4vw,58px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink">
+            <h2 className="m-0 font-display text-[clamp(28px,3.6vw,44px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink">
               Ways we can help
             </h2>
           </div>

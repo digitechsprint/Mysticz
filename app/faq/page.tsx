@@ -17,7 +17,7 @@ export default function FaqPage() {
         <Reveal>
           <div className="lg:sticky lg:top-[120px]">
             <div className="label mb-[22px]">FAQs</div>
-            <h1 className="m-0 mb-[22px] font-display text-[clamp(36px,4.6vw,62px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
+            <h1 className="m-0 mb-[22px] font-display text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
               Questions you may have
             </h1>
             <p className="m-0 mb-7 max-w-[38ch] text-base leading-[1.8] text-body">

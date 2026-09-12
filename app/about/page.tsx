@@ -35,7 +35,7 @@ export default function AboutPage() {
               Vastu Consultant • Numerologist • Holistic Guide
             </span>
           </div>
-          <h1 className="m-0 max-w-[20ch] font-display text-[clamp(40px,5.4vw,74px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
+          <h1 className="m-0 max-w-[20ch] font-display text-[clamp(34px,4.2vw,56px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
             Meet Bhavika Gupta
           </h1>
         </Reveal>
@@ -51,7 +51,7 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <p className="m-0 mb-7 font-display text-[clamp(21px,2.2vw,28px)] font-semibold leading-[1.5] text-ink text-pretty">
+            <p className="m-0 mb-7 font-display text-[clamp(19px,1.8vw,23px)] font-semibold leading-[1.5] text-ink text-pretty">
               Bhavika helps people better understand themselves, the situations they are facing, and the choices in front of them.
             </p>
             <p className="m-0 mb-[18px] text-base leading-[1.8] text-body text-pretty">
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[18px]">Who she works with</div>
-            <h2 className="m-0 font-display text-[clamp(28px,3.6vw,46px)] font-semibold leading-[1.12] text-ink">
+            <h2 className="m-0 font-display text-[clamp(24px,3vw,36px)] font-semibold leading-[1.12] text-ink">
               Individuals and organisations
             </h2>
           </Reveal>

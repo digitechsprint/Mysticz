@@ -21,7 +21,7 @@ export default function IntroSection() {
             </div>
             <div>
               <div className="label mb-[18px]">The Mysticz approach</div>
-              <h2 className="m-0 mb-6 font-display text-[clamp(30px,3.8vw,50px)] font-semibold leading-[1.1] tracking-[-0.01em] text-ink text-pretty">
+              <h2 className="m-0 mb-6 font-display text-[clamp(26px,3.2vw,40px)] font-semibold leading-[1.1] tracking-[-0.01em] text-ink text-pretty">
                 Vastu, numerology and guidance with a practical approach
               </h2>
               <p className="m-0 mb-4 text-base leading-[1.8] text-body text-pretty">

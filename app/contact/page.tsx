@@ -22,7 +22,7 @@ export default function ContactPage() {
       <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <div className="label mb-[22px]">Contact</div>
-          <h1 className="m-0 mb-6 font-display text-[clamp(36px,4.6vw,62px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
+          <h1 className="m-0 mb-6 font-display text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.08] tracking-[-0.015em] text-ink text-pretty">
             Let&rsquo;s begin your journey toward greater clarity
           </h1>
           <p className="m-0 mb-10 max-w-[44ch] text-[16.5px] leading-[1.8] text-body text-pretty">

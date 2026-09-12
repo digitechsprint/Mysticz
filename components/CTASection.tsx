@@ -18,7 +18,7 @@ export default function CTASection() {
       <div className="relative mx-auto max-w-shell px-5 py-14 sm:px-8 lg:px-[72px] lg:py-20">
         <div className="max-w-[760px]">
           <div className="label mb-5">Begin here</div>
-          <h2 className="m-0 mb-6 font-display text-[clamp(34px,4.8vw,62px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
+          <h2 className="m-0 mb-6 font-display text-[clamp(30px,3.8vw,48px)] font-semibold leading-[1.08] tracking-[-0.01em] text-ink text-pretty">
             Sometimes, clarity begins with one conversation.
           </h2>
           <p className="m-0 mb-9 max-w-[52ch] text-[16.5px] leading-[1.8] text-body text-pretty">
