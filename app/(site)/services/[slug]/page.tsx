@@ -59,10 +59,17 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             <div className="label mb-[18px]">{service.listHeading}</div>
             <div className="flex flex-col">
               {service.list.map((item, i) => (
-                <div key={item.title} className={['border-t border-line-2 py-[18px]', i === service.list.length - 1 ? 'border-b' : ''].join(' ')}>
-                  <div className="mb-1.5 font-display text-xl font-semibold leading-[1.3] text-ink">{item.title}</div>
+                <Link
+                  key={item.title}
+                  href={`/services/${service.slug}/${item.slug}`}
+                  className={['group block border-t border-line-2 py-[18px]', i === service.list.length - 1 ? 'border-b' : ''].join(' ')}
+                >
+                  <div className="mb-1.5 flex items-center gap-2 font-display text-xl font-semibold leading-[1.3] text-ink transition-colors group-hover:text-gold-hover">
+                    {item.title}
+                    <span className="text-base opacity-0 transition-opacity group-hover:opacity-100">→</span>
+                  </div>
                   <p className="m-0 text-[14.5px] leading-[1.7] text-muted">{item.copy}</p>
-                </div>
+                </Link>
               ))}
             </div>
           </Reveal>

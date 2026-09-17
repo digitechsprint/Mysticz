@@ -13,7 +13,7 @@ export interface Service {
   overviewHeading: string;
   overview: string[];
   listHeading: string;
-  list: { title: string; copy: string }[];
+  list: { title: string; copy: string; slug: string; intro: string }[];
   closing: string;
   closingCta: string;
   bookCta: string;
@@ -43,10 +43,34 @@ export const services: Service[] = [
     ],
     listHeading: 'Who it is for',
     list: [
-      { title: 'Commercial Vastu', copy: 'Retail outlets, showrooms and customer-facing spaces.' },
-      { title: 'Industrial Vastu', copy: 'Workspaces where flow, safety and energy matter as much as output.' },
-      { title: 'Office Vastu', copy: 'Workplaces, cabins, seating layouts and meeting rooms.' },
-      { title: 'Residential Vastu', copy: 'Homes, apartments and villas — newly moved into or lived in for years.' },
+      {
+        title: 'Commercial Vastu',
+        copy: 'Retail outlets, showrooms and customer-facing spaces.',
+        slug: 'commercial',
+        intro:
+          'Commercial Vastu looks at how a retail outlet, showroom or customer-facing space is laid out — the entrance, the till or reception point, where stock and staff sit, and how footfall moves through the space. The aim is a layout that supports the business itself: easier decision-making, steadier footfall and a space that feels right the moment someone walks in.',
+      },
+      {
+        title: 'Industrial Vastu',
+        copy: 'Workspaces where flow, safety and energy matter as much as output.',
+        slug: 'industrial',
+        intro:
+          'Production floors, warehouses and industrial sites carry their own considerations — the direction machinery faces, where staff spend most of their time, material flow, and how the site as a whole is oriented. Industrial Vastu assesses these against traditional principles, with recommendations that work alongside existing operations rather than requiring a shutdown to implement.',
+      },
+      {
+        title: 'Office Vastu',
+        copy: 'Workplaces, cabins, seating layouts and meeting rooms.',
+        slug: 'office',
+        intro:
+          'An office consultation looks at leadership seating, team layout, cabins and meeting rooms, and the direction the main entrance and key desks face. Many recommendations are about rearrangement rather than renovation — where a desk sits, which way someone faces while working, how a cabin is positioned relative to the rest of the floor.',
+      },
+      {
+        title: 'Residential Vastu',
+        copy: 'Homes, apartments and villas — newly moved into or lived in for years.',
+        slug: 'residential',
+        intro:
+          'Whether you have just moved in, are renovating, or have lived in a home for years and want a fresh assessment, residential Vastu looks at the property as a whole — entrances, the kitchen, bedrooms, the Brahmasthana and the overall flow of the home — and sets out what is worth changing and what can be left alone.',
+      },
     ],
     closing: 'Ready to look at your premises properly?',
     closingCta: 'Book a Consultation',
@@ -73,10 +97,34 @@ export const services: Service[] = [
     ],
     listHeading: 'Types of reading',
     list: [
-      { title: 'Name numerology', copy: 'Assessment of your birth name and current name, and adjustments where useful.' },
-      { title: 'Business numerology', copy: 'Business names, launch dates and decisions around expansion or rebranding.' },
-      { title: 'Birth date numerology', copy: 'Core reading of your date of birth and the cycles it points to.' },
-      { title: 'Partner compatibility', copy: 'A comparative reading of two birth dates and names — where you align, and where a little more understanding helps.' },
+      {
+        title: 'Name Numerology',
+        copy: 'Assessment of your birth name and current name, and adjustments where useful.',
+        slug: 'name',
+        intro:
+          'Your name carries a number of its own, calculated from its letters, and read alongside your date of birth it can reveal where the two are working together and where they are pulling in different directions. A name numerology session looks at your birth name and your current name if they differ, and where useful, suggests small adjustments — a spelling, a preferred name — that bring more alignment.',
+      },
+      {
+        title: 'Business Numerology',
+        copy: 'Business names, launch dates and decisions around expansion or rebranding.',
+        slug: 'business',
+        intro:
+          'A business carries its own numerological profile, shaped by its name and the date it began. This session is useful before you register a name, choose a launch date, or consider a rebrand or expansion — looking at what the numbers suggest about timing and naming, so the decision is made with that information in hand rather than after the fact.',
+      },
+      {
+        title: 'Birth Date Numerology',
+        copy: 'Core reading of your date of birth and the cycles it points to.',
+        slug: 'birth-date',
+        intro:
+          'Your date of birth is the foundation of a numerology reading — it points to recurring cycles, tendencies in how you make decisions, and periods that tend to be more or less productive for you. This is usually the starting point for anyone new to numerology, and often the session everything else builds on.',
+      },
+      {
+        title: 'Partner Compatibility',
+        copy: 'A comparative reading of two birth dates and names — where you align, and where a little more understanding helps.',
+        slug: 'partner-compatibility',
+        intro:
+          'A compatibility reading looks at two people’s numbers side by side — birth dates and names — to understand where you naturally align and where a little more patience or communication tends to help. It is used by couples, business partners and sometimes family members who want a clearer picture of how their patterns interact.',
+      },
     ],
     closing: 'Get your numbers read properly.',
     closingCta: 'Book a Consultation',
@@ -102,10 +150,34 @@ export const services: Service[] = [
     ],
     listHeading: 'What it supports',
     list: [
-      { title: 'Emotional release', copy: 'Making space for feeling that has been held for a long time.' },
-      { title: 'Trauma healing', copy: 'Working with childhood experiences that still shape present responses.' },
-      { title: 'Self growth', copy: 'Moving forward with a clearer sense of your own patterns.' },
-      { title: 'Chakra balancing', copy: 'Gently working with the body’s energy centres alongside the emotional process.' },
+      {
+        title: 'Emotional Release',
+        copy: 'Making space for feeling that has been held for a long time.',
+        slug: 'emotional-release',
+        intro:
+          'Some feelings get put aside because there was never a safe moment to feel them fully. This part of the work is about making space for that — not forcing anything, but allowing what has been held for a long time to surface and move, gently and at your own pace.',
+      },
+      {
+        title: 'Trauma Healing',
+        copy: 'Working with childhood experiences that still shape present responses.',
+        slug: 'trauma-healing',
+        intro:
+          'Experiences from childhood — even ones that seem small in hindsight — can continue to shape how you respond to situations as an adult. This work looks at those experiences with care, helping you understand the response rather than judge it, and gradually loosening the hold it has on your present.',
+      },
+      {
+        title: 'Self Growth',
+        copy: 'Moving forward with a clearer sense of your own patterns.',
+        slug: 'self-growth',
+        intro:
+          'Once a pattern is understood, it becomes easier to choose a different response. This is the forward-looking part of the work — not dwelling on the past for its own sake, but using what it reveals to move ahead with more clarity about who you are and how you want to show up.',
+      },
+      {
+        title: 'Chakra Balancing',
+        copy: 'Gently working with the body’s energy centres alongside the emotional process.',
+        slug: 'chakra-balancing',
+        intro:
+          'Emotional patterns often sit alongside blocked or overactive energy centres in the body. Chakra balancing works with these gently, alongside the emotional process, supporting a sense of steadiness as the deeper work unfolds.',
+      },
     ],
     closing: 'Come as you are. Nothing to prepare.',
     closingCta: 'Book a Session',
@@ -132,9 +204,27 @@ export const services: Service[] = [
     ],
     listHeading: 'What it includes',
     list: [
-      { title: 'Energy cleansing', copy: 'Clearing what has accumulated and is no longer serving you.' },
-      { title: 'Chakra healing', copy: 'Rebalancing the centres that feel blocked or overactive.' },
-      { title: 'Aura protection', copy: 'Practices to help you hold your energy in demanding environments.' },
+      {
+        title: 'Energy Cleansing',
+        copy: 'Clearing what has accumulated and is no longer serving you.',
+        slug: 'energy-cleansing',
+        intro:
+          'Energy accumulates over time — from environments, interactions and experiences that no longer serve you. This part of a Lama Fera session focuses on clearing that build-up, creating room for a lighter, clearer state.',
+      },
+      {
+        title: 'Chakra Healing',
+        copy: 'Rebalancing the centres that feel blocked or overactive.',
+        slug: 'chakra-healing',
+        intro:
+          'Working through the body’s main energy centres, this part of the session identifies which feel blocked or overactive and works to bring them back into balance, supporting a more even sense of energy day to day.',
+      },
+      {
+        title: 'Aura Protection',
+        copy: 'Practices to help you hold your energy in demanding environments.',
+        slug: 'aura-protection',
+        intro:
+          'Some environments and relationships are more demanding on your energy than others. Aura protection focuses on practices that help you hold your own energy more steadily in those situations, rather than feeling depleted by them.',
+      },
     ],
     closing: 'Restore balance, in person or remotely.',
     closingCta: 'Book a Session',
@@ -189,9 +279,10 @@ export const areasOfFocus = [
 
 export const trust = [
   { num: '01', title: 'Personalised consultations', copy: 'No two people arrive with the same questions.' },
-  { num: '02', title: 'Residential & commercial', copy: 'Homes, offices and retail spaces.' },
-  { num: '03', title: 'Online & in person', copy: 'Sessions by video call anywhere in the world.' },
-  { num: '04', title: 'Practical solutions', copy: 'Guidance that works with the space you already have.' },
+  { num: '02', title: 'Residential Vastu', copy: 'Homes, apartments and villas — new or long lived-in.' },
+  { num: '03', title: 'Commercial & Industrial', copy: 'Offices, retail and production spaces.' },
+  { num: '04', title: 'Online & in person', copy: 'Sessions by video call anywhere in the world.' },
+  { num: '05', title: 'Practical solutions', copy: 'Guidance that works with the space you already have.' },
 ];
 
 export const process = [

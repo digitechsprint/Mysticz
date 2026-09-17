@@ -3,11 +3,11 @@ import { trust } from '@/lib/content';
 export default function TrustStrip() {
   return (
     <section className="border-y border-line bg-[linear-gradient(180deg,#F3E9D3_0%,#EBDEC0_100%)]">
-      <div className="mx-auto grid max-w-shell sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-shell sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {trust.map((item, i) => (
           <div
             key={item.num}
-            className={['px-5 py-7 sm:px-8 lg:px-10', i < trust.length - 1 ? 'lg:border-r lg:border-line' : ''].join(' ')}
+            className={['px-5 py-7 sm:px-8 lg:px-6', i < trust.length - 1 ? 'lg:border-r lg:border-line' : ''].join(' ')}
           >
             <div className="label mb-3">{item.num}</div>
             <div className="mb-2 font-display text-[21px] font-semibold leading-tight text-ink">{item.title}</div>
