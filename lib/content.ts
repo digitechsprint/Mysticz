@@ -330,5 +330,5 @@ export interface Article { slug: string; category: string; title: string; excerp
 export const articles: Article[] = [
   { slug: 'vastu-principles-before-designing-your-home', category: 'Vastu', title: '5 Vastu Principles to Consider Before Designing Your Home', excerpt: 'Five foundational placement principles — from the kitchen to the Brahmasthana — worth knowing before you build or renovate.', image: IMG + 'vastu.png' },
   { slug: 'vastu-shastra-traditional-wisdom-modern-design', category: 'Vastu', title: 'Vastu Shastra: Where Traditional Wisdom Meets Modern Design', excerpt: 'Where an ancient Indian approach to space planning overlaps with what we already know about light, air and clutter.', image: IMG + 'vastu.png' },
-  { slug: 'five-minute-abc-healing-practice', category: 'Meditation', title: 'Your 5-Minute ABC Healing Practice', excerpt: 'A short daily practice built around affirmations, breathwork and chanting — using Bhramari pranayama and chakra beej mantras.', image: IMG + 'sessions-individual.png' },
+  { slug: 'five-minute-abc-healing-practice', category: 'Meditation', title: 'Your 5-Minute ABC Healing Practice', excerpt: 'A short daily practice built around affirmations, breathwork and chanting — using Bhramari pranayama and chakra beej mantras.', image: IMG + 'bhavika-meditation.jpg' },
 ];

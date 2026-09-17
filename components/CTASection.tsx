@@ -5,14 +5,14 @@ import { site } from '@/lib/site';
 export default function CTASection() {
   return (
     <section className="relative overflow-hidden border-y border-gold-line bg-band">
-      <div className="absolute inset-0 opacity-[0.34]">
-        <Image src="/images/vastu.png" alt="" fill sizes="100vw" className="object-cover" />
+      <div className="absolute inset-y-0 right-0 hidden w-[48%] sm:block">
+        <Image src="/images/bhavika-professional.jpg" alt="" fill sizes="48vw" className="object-cover object-center" />
       </div>
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'linear-gradient(100deg, rgba(233,219,192,.94) 0%, rgba(233,219,192,.78) 62%, rgba(233,219,192,.62) 100%)',
+            'linear-gradient(100deg, rgba(233,219,192,1) 0%, rgba(233,219,192,.97) 40%, rgba(233,219,192,.6) 70%, rgba(233,219,192,.25) 100%)',
         }}
       />
       <div className="relative mx-auto max-w-shell px-5 py-12 sm:px-8 lg:px-[72px] lg:py-16">

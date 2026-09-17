@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import Certifications from '@/components/Certifications';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
 import { site } from '@/lib/site';
@@ -83,7 +84,9 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <Section ground="sand" topRule>
+      <Certifications />
+
+      <Section>
         <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[18px]">Who she works with</div>
