@@ -34,7 +34,7 @@ export default function IntroVeil() {
         className="text-[10px] font-semibold uppercase leading-relaxed text-gold-text"
         style={{ letterSpacing: '0.34em', animation: 'tagIn 1.7s both' }}
       >
-        Vastu • Numerology • Healing
+        Vastu • Numerology • Meditation • Healing
       </div>
     </div>
   );

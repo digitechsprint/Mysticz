@@ -25,17 +25,17 @@ export const services: Service[] = [
   {
     slug: 'vastu',
     num: '01',
-    tag: 'Flagship',
+    tag: 'Balance',
     title: 'Vastu Consultancy',
     cta: 'Explore Vastu',
     blurb:
-      'Commercial, factory and office Vastu for businesses — plus residential guidance — with practical solutions that work within the space you have.',
-    subs: ['Commercial', 'Factory', 'Office', 'Residential'],
+      'Vastu guidance for the spaces where you live and work — practical, energy-conscious solutions that work within the space you already have.',
+    subs: ['Commercial', 'Industrial', 'Office', 'Residential'],
     image: IMG + 'vastu.png',
     imageAlt: 'Sunlit interior with architectural detail',
-    heroHeading: 'Vastu for commercial premises, factories and offices',
+    heroHeading: 'Vastu for homes, offices and the businesses you run',
     heroCopy:
-      'Specialised Vastu consultancy for businesses — retail, offices, showrooms and industrial sites — with practical, non-demolition solutions wherever possible. Residential consultations are available alongside.',
+      'Specialised Vastu consultancy for homes and businesses — with practical, non-demolition solutions wherever possible.',
     overviewHeading: 'What a Vastu consultation covers',
     overview: [
       'A Vastu consultation looks at orientation, entrances, the use of each room, placement of heavy and light elements, light, air and water, and the areas of the plan that are carrying the most strain.',
@@ -44,9 +44,9 @@ export const services: Service[] = [
     listHeading: 'Who it is for',
     list: [
       { title: 'Commercial Vastu', copy: 'Retail outlets, showrooms and customer-facing spaces.' },
-      { title: 'Factory & Industrial Vastu', copy: 'Production floors, storage and machinery placement.' },
+      { title: 'Industrial Vastu', copy: 'Workspaces where flow, safety and energy matter as much as output.' },
       { title: 'Office Vastu', copy: 'Workplaces, cabins, seating layouts and meeting rooms.' },
-      { title: 'Residential Vastu', copy: 'Homes, apartments and villas — existing or under construction.' },
+      { title: 'Residential Vastu', copy: 'Homes, apartments and villas — newly moved into or lived in for years.' },
     ],
     closing: 'Ready to look at your premises properly?',
     closingCta: 'Book a Consultation',
@@ -60,7 +60,7 @@ export const services: Service[] = [
     cta: 'Explore Numerology',
     blurb:
       'Understand the patterns represented by your numbers and gain clarity around important personal and professional decisions.',
-    subs: ['Name', 'Business', 'Birth Date'],
+    subs: ['Name', 'Business', 'Birth Date', 'Partner Compatibility'],
     image: IMG + 'sessions-individual.png',
     imageAlt: 'Handwritten numerology chart',
     heroHeading: 'The patterns your numbers are already describing',
@@ -76,6 +76,7 @@ export const services: Service[] = [
       { title: 'Name numerology', copy: 'Assessment of your birth name and current name, and adjustments where useful.' },
       { title: 'Business numerology', copy: 'Business names, launch dates and decisions around expansion or rebranding.' },
       { title: 'Birth date numerology', copy: 'Core reading of your date of birth and the cycles it points to.' },
+      { title: 'Partner compatibility', copy: 'A comparative reading of two birth dates and names — where you align, and where a little more understanding helps.' },
     ],
     closing: 'Get your numbers read properly.',
     closingCta: 'Book a Consultation',
@@ -88,7 +89,7 @@ export const services: Service[] = [
     title: 'Inner Child Healing',
     cta: 'Explore Healing',
     blurb: 'A guided process focused on emotional release, self-understanding and personal growth.',
-    subs: ['Emotional Release', 'Trauma Healing', 'Self Growth'],
+    subs: ['Emotional Release', 'Trauma Healing', 'Self Growth', 'Chakra Balancing'],
     image: IMG + 'sessions-individual.png',
     imageAlt: 'Quiet room in soft natural light',
     heroHeading: 'Understanding the cycle before trying to break it',
@@ -104,6 +105,7 @@ export const services: Service[] = [
       { title: 'Emotional release', copy: 'Making space for feeling that has been held for a long time.' },
       { title: 'Trauma healing', copy: 'Working with childhood experiences that still shape present responses.' },
       { title: 'Self growth', copy: 'Moving forward with a clearer sense of your own patterns.' },
+      { title: 'Chakra balancing', copy: 'Gently working with the body’s energy centres alongside the emotional process.' },
     ],
     closing: 'Come as you are. Nothing to prepare.',
     closingCta: 'Book a Session',
@@ -151,9 +153,9 @@ export const vastuCategories = [
   },
   {
     kicker: 'Industrial',
-    title: 'Factory & Industrial Vastu',
+    title: 'Industrial Vastu',
     copy:
-      'For production floors and industrial sites — machine layout, staff areas, workspace planning and land selection.',
+      'For production and industrial spaces — layout, workspace planning and the areas your team moves through daily.',
     image: IMG + 'sessions-corporate.png',
     imageAlt: 'Industrial workspace',
   },
@@ -161,7 +163,7 @@ export const vastuCategories = [
     kicker: 'Homes',
     title: 'Residential & Office Vastu',
     copy:
-      'For homes, apartments, villas and workplaces — from a plan under construction to a space lived in for years.',
+      'For homes, apartments, villas and workplaces — freshly moved into or lived in for years.',
     image: IMG + 'vastu.png',
     imageAlt: 'Calm residential living room',
   },
@@ -193,7 +195,7 @@ export const trust = [
 ];
 
 export const process = [
-  { num: '01', title: 'Share your space', copy: 'Send your floor plan, photographs or details, along with the questions on your mind.' },
+  { num: '01', title: 'Share your space', copy: 'Share photographs or details about your space, along with the questions on your mind.' },
   { num: '02', title: 'Understand the energy', copy: 'Bhavika reads the space, the numbers and the situation, and identifies what is working against you.' },
   { num: '03', title: 'Receive personalised guidance', copy: 'A clear set of recommendations, prioritised, with the reasoning explained in plain language.' },
   { num: '04', title: 'Create positive change', copy: 'Put the changes in place at your own pace, with follow-up support when you need it.' },
@@ -234,12 +236,8 @@ export const faqs: Faq[] = [
 
 export interface Article { slug: string; category: string; title: string; excerpt: string; image: string }
 
-/* Placeholder editorial — replace with real article copy before launch. */
 export const articles: Article[] = [
-  { slug: 'vastu-principles-before-designing-your-home', category: 'Vastu', title: '5 Vastu principles to consider before designing your home', excerpt: 'The decisions that are simplest to make on paper and hardest to undo once built.', image: IMG + 'vastu.png' },
-  { slug: 'home-environment-and-everyday-wellbeing', category: 'Wellness', title: 'How your home environment influences everyday wellbeing', excerpt: 'Light, air, clutter and orientation, and the difference each one makes to how a room feels.', image: IMG + 'sessions-individual.png' },
-  { slug: 'role-of-numbers-in-numerology', category: 'Numerology', title: 'Understanding the role of numbers in numerology', excerpt: 'What a birth date and a name actually describe, and what they do not.', image: IMG + 'sessions-corporate.png' },
-  { slug: 'vastu-for-modern-workspaces', category: 'Business', title: 'Vastu for modern workspaces', excerpt: 'Applying traditional placement principles inside an open-plan office.', image: IMG + 'vastu.png' },
-  { slug: 'small-corrections-that-change-a-room', category: 'Home', title: 'Small corrections that change how a room works', excerpt: 'Non-structural adjustments that are usually the first thing recommended.', image: IMG + 'sessions-individual.png' },
-  { slug: 'choosing-a-business-name-with-numerology', category: 'Numerology', title: 'Choosing a business name with numerology', excerpt: 'How a name is assessed before it goes on a signboard.', image: IMG + 'sessions-corporate.png' },
+  { slug: 'vastu-principles-before-designing-your-home', category: 'Vastu', title: '5 Vastu Principles to Consider Before Designing Your Home', excerpt: 'Five foundational placement principles — from the kitchen to the Brahmasthana — worth knowing before you build or renovate.', image: IMG + 'vastu.png' },
+  { slug: 'vastu-shastra-traditional-wisdom-modern-design', category: 'Vastu', title: 'Vastu Shastra: Where Traditional Wisdom Meets Modern Design', excerpt: 'Where an ancient Indian approach to space planning overlaps with what we already know about light, air and clutter.', image: IMG + 'vastu.png' },
+  { slug: 'five-minute-abc-healing-practice', category: 'Meditation', title: 'Your 5-Minute ABC Healing Practice', excerpt: 'A short daily practice built around affirmations, breathwork and chanting — using Bhramari pranayama and chakra beej mantras.', image: IMG + 'sessions-individual.png' },
 ];

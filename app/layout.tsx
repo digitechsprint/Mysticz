@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: `${site.name} — Vastu, Numerology & Holistic Wellness`, template: `%s — ${site.name}` },
   description:
-    'Practical Vastu consultancy, numerology and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
+    'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
   openGraph: {
     title: `${site.name} — Vastu, Numerology & Holistic Wellness`,
     description:
-      'Practical Vastu consultancy, numerology and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
+      'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
     url: site.url,
     siteName: site.name,
     images: ['/images/logo-lockup.png'],

@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="mb-6 flex items-center gap-3">
             <span className="block h-px w-[34px] bg-gold-line" />
             <span className="label !font-semibold" style={{ letterSpacing: '0.26em' }}>
-              Vastu • Numerology • Holistic Wellness
+              Vastu • Numerology • Meditation • Holistic Wellness
             </span>
           </div>
 

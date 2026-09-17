@@ -7,7 +7,6 @@ import ProcessSection from '@/components/ProcessSection';
 import ServicesGrid from '@/components/ServicesGrid';
 import Testimonials from '@/components/Testimonials';
 import TrustStrip from '@/components/TrustStrip';
-import VastuSection from '@/components/VastuSection';
 import WhyMysticz from '@/components/WhyMysticz';
 import { testimonials as fallbackTestimonials } from '@/lib/content';
 import { listTestimonials } from '@/lib/data';
@@ -17,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata('/', {
     title: 'Mysticz — Vastu, Numerology & Holistic Wellness',
     description:
-      'Practical Vastu consultancy, numerology and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
+      'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
   });
 }
 
@@ -31,7 +30,6 @@ export default async function HomePage() {
       <TrustStrip />
       <IntroSection />
       <ServicesGrid />
-      <VastuSection />
       <ProcessSection />
       <WhyMysticz />
       <Testimonials items={testimonials} />
