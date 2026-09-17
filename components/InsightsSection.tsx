@@ -1,10 +1,13 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { articles } from '@/lib/content';
+import { articles as fallbackArticles } from '@/lib/content';
+import { listArticles } from '@/lib/data';
 import Reveal from './Reveal';
 import Section from './Section';
 
-export default function InsightsSection({ limit = 3 }: { limit?: number }) {
+export default async function InsightsSection({ limit = 3 }: { limit?: number }) {
+  const dbArticles = await listArticles({ publishedOnly: true });
+  const articles = dbArticles.length > 0 ? dbArticles : fallbackArticles;
+
   return (
     <Section>
       <Reveal>
@@ -26,7 +29,8 @@ export default function InsightsSection({ limit = 3 }: { limit?: number }) {
           <Reveal key={article.slug} delay={i * 0.06}>
             <Link href={'/insights/' + article.slug} className="group block text-ink transition-transform duration-500 ease-premium hover:-translate-y-1">
               <div className="relative mb-5 aspect-[3/2] w-full overflow-hidden bg-sand">
-                <Image src={article.image} alt="" fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover transition-transform duration-700 ease-premium group-hover:scale-[1.04]" />
+                {/* eslint-disable-next-line @next/next/no-img-element -- article images are admin-managed, arbitrary URLs */}
+                <img src={article.image} alt="" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-premium group-hover:scale-[1.04]" loading="lazy" />
               </div>
               <div className="mb-3 text-[10.5px] font-medium uppercase leading-relaxed tracking-[0.2em] text-gold-text">{article.category}</div>
               <h3 className="m-0 mb-2.5 font-display text-[22px] font-semibold leading-snug text-ink text-pretty">{article.title}</h3>

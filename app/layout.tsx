@@ -1,9 +1,5 @@
 import type { Metadata } from 'next';
 import { Manrope, Playfair_Display } from 'next/font/google';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import IntroVeil from '@/components/IntroVeil';
-import WhatsAppButton from '@/components/WhatsAppButton';
 import { site } from '@/lib/site';
 import './globals.css';
 
@@ -42,13 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
-      <body className="font-sans">
-        <IntroVeil />
-        <Header />
-        <main className="pt-16">{children}</main>
-        <Footer />
-        <WhatsAppButton />
-      </body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }

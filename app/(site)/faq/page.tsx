@@ -3,14 +3,21 @@ import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
-import { faqs } from '@/lib/content';
+import { faqs as fallbackFaqs } from '@/lib/content';
+import { listFaqs } from '@/lib/data';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'FAQs',
-  description: 'Answers to common questions about Vastu, numerology, energy healing and consultations with Bhavika Gupta.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata('/faq', {
+    title: 'FAQs',
+    description: 'Answers to common questions about Vastu, numerology, energy healing and consultations with Bhavika Gupta.',
+  });
+}
 
-export default function FaqPage() {
+export default async function FaqPage() {
+  const dbFaqs = await listFaqs();
+  const items = dbFaqs.length > 0 ? dbFaqs.map((f) => ({ q: f.question, a: f.answer })) : fallbackFaqs;
+
   return (
     <Section>
       <div className="grid items-start gap-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-20">
@@ -30,7 +37,7 @@ export default function FaqPage() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <FAQAccordion items={[...faqs]} />
+          <FAQAccordion items={items} />
         </Reveal>
       </div>
     </Section>

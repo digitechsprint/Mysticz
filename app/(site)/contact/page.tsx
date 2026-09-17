@@ -3,11 +3,14 @@ import ContactForm from '@/components/ContactForm';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
 import { site } from '@/lib/site';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Bhavika Gupta for Vastu, numerology and holistic wellness consultations, online or in Noida.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata('/contact', {
+    title: 'Contact',
+    description: 'Get in touch with Bhavika Gupta for Vastu, numerology and holistic wellness consultations, online or in Noida.',
+  });
+}
 
 const rows = [
   { label: 'Email', value: site.email, href: 'mailto:' + site.email },

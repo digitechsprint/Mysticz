@@ -1,12 +1,14 @@
 'use client';
 import { useState } from 'react';
-import { testimonials } from '@/lib/content';
+import type { Testimonial } from '@/lib/content';
 import Section from './Section';
 
-export default function Testimonials() {
+export default function Testimonials({ items: testimonials }: { items: Testimonial[] }) {
   const [index, setIndex] = useState(0);
   const current = testimonials[index];
   const go = (delta: number) => setIndex((i) => (i + delta + testimonials.length) % testimonials.length);
+
+  if (!current) return null;
 
   return (
     <Section>
@@ -39,7 +41,7 @@ export default function Testimonials() {
         <div className="flex flex-col">
           {testimonials.map((t, i) => (
             <button
-              key={t.name}
+              key={t.name + i}
               type="button"
               onClick={() => setIndex(i)}
               aria-current={i === index}

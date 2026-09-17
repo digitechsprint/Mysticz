@@ -4,12 +4,15 @@ import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
 import { site } from '@/lib/site';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'About Bhavika Gupta',
-  description:
-    'Bhavika Gupta is a Vastu consultant for homes and commercial spaces, and a numerologist based in Noida, working across Delhi NCR and online.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata('/about', {
+    title: 'About Bhavika Gupta',
+    description:
+      'Bhavika Gupta is a Vastu consultant for homes and commercial spaces, and a numerologist based in Noida, working across Delhi NCR and online.',
+  });
+}
 
 const highlights = ['Personalised guidance', 'Practical approach', 'Vastu expertise', 'Numerology', 'Holistic wellbeing'];
 

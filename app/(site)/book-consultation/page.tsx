@@ -3,11 +3,14 @@ import Image from 'next/image';
 import BookingForm from '@/components/BookingForm';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Book a Consultation',
-  description: 'Request a Vastu, numerology or healing consultation with Bhavika Gupta, online or in person.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata('/book-consultation', {
+    title: 'Book a Consultation',
+    description: 'Request a Vastu, numerology or healing consultation with Bhavika Gupta, online or in person.',
+  });
+}
 
 const steps = [
   'You send your details and preferred timing.',

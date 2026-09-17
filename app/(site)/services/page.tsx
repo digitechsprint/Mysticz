@@ -3,11 +3,14 @@ import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
 import ServiceCard from '@/components/ServiceCard';
 import { services } from '@/lib/content';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Services',
-  description: 'Vastu consultancy, numerology, inner child healing and Lama Fera energy healing — four practices, used on their own or together.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return pageMetadata('/services', {
+    title: 'Services',
+    description: 'Vastu consultancy, numerology, inner child healing and Lama Fera energy healing — four practices, used on their own or together.',
+  });
+}
 
 export default function ServicesPage() {
   return (

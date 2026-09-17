@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Reveal from '@/components/Reveal';
 import Section from '@/components/Section';
 import { services } from '@/lib/content';
+import { pageMetadata } from '@/lib/seo';
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
-  return { title: service.title, description: service.heroCopy };
+  return pageMetadata('/services/' + slug, { title: service.title, description: service.heroCopy });
 }
 
 export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
