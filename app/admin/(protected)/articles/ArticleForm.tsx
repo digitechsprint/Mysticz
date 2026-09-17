@@ -57,7 +57,7 @@ export default function ArticleForm({ article, action }: { article?: DbArticle; 
 
       <label className="block">
         <span className={labelClass}>Image URL</span>
-        <input name="image" defaultValue={article?.image} className={inputClass} placeholder="/images/vastu.png" />
+        <input name="image" defaultValue={article?.image} className={inputClass} placeholder="/images/vastu-interior.jpg" />
       </label>
 
       <div className="grid grid-cols-2 gap-4">

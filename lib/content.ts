@@ -254,7 +254,7 @@ export const vastuCategories = [
     title: 'Residential & Office Vastu',
     copy:
       'For homes, apartments, villas and workplaces — freshly moved into or lived in for years.',
-    image: IMG + 'vastu.png',
+    image: IMG + 'vastu-interior.jpg',
     imageAlt: 'Calm residential living room',
   },
 ];
@@ -328,7 +328,7 @@ export const faqs: Faq[] = [
 export interface Article { slug: string; category: string; title: string; excerpt: string; image: string }
 
 export const articles: Article[] = [
-  { slug: 'vastu-principles-before-designing-your-home', category: 'Vastu', title: '5 Vastu Principles to Consider Before Designing Your Home', excerpt: 'Five foundational placement principles — from the kitchen to the Brahmasthana — worth knowing before you build or renovate.', image: IMG + 'vastu.png' },
-  { slug: 'vastu-shastra-traditional-wisdom-modern-design', category: 'Vastu', title: 'Vastu Shastra: Where Traditional Wisdom Meets Modern Design', excerpt: 'Where an ancient Indian approach to space planning overlaps with what we already know about light, air and clutter.', image: IMG + 'vastu.png' },
+  { slug: 'vastu-principles-before-designing-your-home', category: 'Vastu', title: '5 Vastu Principles to Consider Before Designing Your Home', excerpt: 'Five foundational placement principles — from the kitchen to the Brahmasthana — worth knowing before you build or renovate.', image: IMG + 'vastu-home-design.jpg' },
+  { slug: 'vastu-shastra-traditional-wisdom-modern-design', category: 'Vastu', title: 'Vastu Shastra: Where Traditional Wisdom Meets Modern Design', excerpt: 'Where an ancient Indian approach to space planning overlaps with what we already know about light, air and clutter.', image: IMG + 'vastu-modern-architecture.jpg' },
   { slug: 'five-minute-abc-healing-practice', category: 'Meditation', title: 'Your 5-Minute ABC Healing Practice', excerpt: 'A short daily practice built around affirmations, breathwork and chanting — using Bhramari pranayama and chakra beej mantras.', image: IMG + 'bhavika-meditation.jpg' },
 ];
