@@ -86,7 +86,7 @@ export const services: Service[] = [
     slug: 'inner-child-healing',
     num: '03',
     tag: 'Healing',
-    title: 'Inner Child Healing',
+    title: 'Inner Child Healing & Chakra Balancing',
     cta: 'Explore Healing',
     blurb: 'A guided process focused on emotional release, self-understanding and personal growth.',
     subs: ['Emotional Release', 'Trauma Healing', 'Self Growth', 'Chakra Balancing'],
@@ -189,7 +189,7 @@ export const areasOfFocus = [
 
 export const trust = [
   { num: '01', title: 'Personalised consultations', copy: 'No two people arrive with the same questions.' },
-  { num: '02', title: 'Residential & commercial', copy: 'Homes, offices, retail and industrial spaces.' },
+  { num: '02', title: 'Residential & commercial', copy: 'Homes, offices and retail spaces.' },
   { num: '03', title: 'Online & in person', copy: 'Sessions by video call anywhere in the world.' },
   { num: '04', title: 'Practical solutions', copy: 'Guidance that works with the space you already have.' },
 ];
@@ -226,7 +226,7 @@ export interface Faq { q: string; a: string }
 export const faqs: Faq[] = [
   { q: 'Who is Bhavika Gupta?', a: 'Bhavika Gupta is a Vastu consultant for homes and commercial spaces, and a numerologist based in Noida. She works across Delhi NCR and online, with expertise in Astro-Vastu consultancy and numerology.' },
   { q: 'What services does Bhavika offer?', a: 'Vastu consultancy for homes and businesses, numerology consultancy, inner child healing and Lama Fera energy healing. Sessions are available for individuals and for organisations.' },
-  { q: 'What kind of Vastu consultations are available?', a: 'Commercial and factory Vastu for retail outlets, offices and industrial spaces; office Vastu for workplaces; and residential Vastu for homes, apartments and villas. Consultations can cover a plan under construction or a space already in use.' },
+  { q: 'What kind of Vastu consultations are available?', a: 'Commercial and industrial Vastu for retail outlets, offices and production spaces; office Vastu for workplaces; and residential Vastu for homes, apartments and villas. Consultations can cover a new space or one already in use.' },
   { q: 'Do I need to believe in Vastu or numerology?', a: 'You don’t need belief; you need openness. Numerology operates on mathematical principles that predate modern science, and energy healing works at a frequency level that is real regardless of your conscious awareness of it. Bhavika has worked with many skeptics who became her most enthusiastic referrers. Come curious, not committed.' },
   { q: 'What information do I need before a consultation?', a: 'For personal numerology: your full birth name, your current name if different, and your date of birth. For business sessions: the full business name and launch date. For inner child and energy healing: nothing at all — come with an open heart and the rest is taken care of in the session.' },
   { q: 'Does Bhavika work with businesses and commercial spaces?', a: 'Yes. Bhavika offers specialised Vastu and numerology consultations for businesses, offices, retail outlets and commercial spaces, with practical, customised solutions designed to support business growth and workplace harmony.' },
