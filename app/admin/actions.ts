@@ -41,7 +41,6 @@ export async function login(formData: FormData): Promise<{ error: string } | voi
 export async function logout() {
   const jar = await cookies();
   jar.delete(ADMIN_COOKIE_NAME);
-  redirect('/admin/login');
 }
 
 // --- SEO -------------------------------------------------------------------
@@ -78,7 +77,6 @@ export async function createArticleAction(formData: FormData) {
   await createArticle(input);
   revalidatePath('/insights');
   revalidatePath('/admin/articles');
-  redirect('/admin/articles');
 }
 
 export async function updateArticleAction(id: string, formData: FormData) {
@@ -87,7 +85,6 @@ export async function updateArticleAction(id: string, formData: FormData) {
   revalidatePath('/insights');
   revalidatePath('/insights/' + input.slug);
   revalidatePath('/admin/articles');
-  redirect('/admin/articles');
 }
 
 export async function deleteArticleAction(id: string) {

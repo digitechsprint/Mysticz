@@ -1,11 +1,34 @@
+'use client';
+import { useRouter } from 'next/navigation';
+import { useState, useTransition } from 'react';
 import type { DbArticle } from '@/lib/data';
 
 const inputClass = 'w-full rounded border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 outline-none focus:border-neutral-400';
 const labelClass = 'mb-1 block text-xs font-medium uppercase tracking-wide text-neutral-500';
 
-export default function ArticleForm({ article, action }: { article?: DbArticle; action: (formData: FormData) => void }) {
+export default function ArticleForm({ article, action }: { article?: DbArticle; action: (formData: FormData) => Promise<void> }) {
+  const router = useRouter();
+  const [pending, startTransition] = useTransition();
+  const [error, setError] = useState<string | null>(null);
+
   return (
-    <form action={action} className="flex max-w-2xl flex-col gap-4">
+    <form
+      action={(formData: FormData) => {
+        setError(null);
+        startTransition(async () => {
+          try {
+            await action(formData);
+            router.push('/admin/articles');
+            router.refresh();
+          } catch (e) {
+            setError(e instanceof Error ? e.message : 'Something went wrong.');
+          }
+        });
+      }}
+      className="flex max-w-2xl flex-col gap-4"
+    >
+      {error && <p className="rounded border border-red-900 bg-red-950 px-3 py-2 text-sm text-red-300">{error}</p>}
+
       <div className="grid grid-cols-2 gap-4">
         <label className="block">
           <span className={labelClass}>Slug</span>
@@ -48,8 +71,8 @@ export default function ArticleForm({ article, action }: { article?: DbArticle; 
         </label>
       </div>
 
-      <button type="submit" className="mt-2 w-fit rounded bg-neutral-100 px-5 py-2.5 text-xs font-semibold uppercase tracking-wide text-neutral-900 hover:bg-white">
-        Save article
+      <button type="submit" disabled={pending} className="mt-2 w-fit rounded bg-neutral-100 px-5 py-2.5 text-xs font-semibold uppercase tracking-wide text-neutral-900 hover:bg-white disabled:opacity-60">
+        {pending ? 'Saving…' : 'Save article'}
       </button>
     </form>
   );

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { logout } from '../actions';
+import SignOutButton from './SignOutButton';
 
 const navItems = [
   { href: '/admin', label: 'Dashboard' },
@@ -33,11 +33,7 @@ export default function AdminProtectedLayout({ children }: { children: React.Rea
           <Link href="/" target="_blank" className="rounded px-2.5 py-2 text-sm text-neutral-500 transition-colors hover:bg-neutral-900 hover:text-neutral-300">
             View site ↗
           </Link>
-          <form action={logout}>
-            <button type="submit" className="mt-1 w-full rounded px-2.5 py-2 text-left text-sm text-neutral-500 transition-colors hover:bg-neutral-900 hover:text-neutral-300">
-              Sign out
-            </button>
-          </form>
+          <SignOutButton />
         </aside>
 
         <main className="min-w-0 flex-1 px-8 py-8">{children}</main>
