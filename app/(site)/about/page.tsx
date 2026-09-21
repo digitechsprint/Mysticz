@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="mb-6 flex items-center gap-3">
             <span className="block h-px w-[34px] bg-gold-line" />
             <span className="label !font-semibold" style={{ letterSpacing: '0.26em' }}>
-              Vastu Consultant • Numerologist • Holistic Guide
+              Vastu Consultant • Numerologist • Meditation Coach • Life Coach
             </span>
           </div>
           <h1 className="m-0 max-w-[20ch] font-display text-[clamp(28px,2.6vw,38px)] font-semibold leading-[1.06] tracking-[-0.015em] text-ink text-pretty">
@@ -59,7 +59,7 @@ export default function AboutPage() {
               Bhavika helps people better understand themselves, the situations they are facing, and the choices in front of them.
             </p>
             <p className="m-0 mb-[18px] text-base leading-[1.8] text-body text-pretty">
-              Her approach is thoughtful, practical and tailored to the individual, because no two people arrive with the same questions. A consultation may begin with a floor plan, a birth date or a decision that has been sitting unresolved for months — what stays constant is the attention given to the specifics of your case.
+              Her approach is thoughtful, practical and tailored to the individual, because no two people arrive with the same questions. A consultation may begin with a floor plan, a birth date or a decision that has been sitting unresolved for months. What stays constant is the attention given to the specifics of your case.
             </p>
             <p className="m-0 mb-[18px] text-base leading-[1.8] text-body text-pretty">
               Bhavika works with Vastu Shastra for homes and commercial spaces, Vedic numerology, inner child healing and Lama Fera energy healing. Where more than one lens is useful, she will say so; where a single conversation is enough, she will say that too.
@@ -79,6 +79,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3.5">
               <a href={'tel:' + site.phoneRaw} className="btn btn-primary">Talk to Bhavika</a>
               <Link href="/book-consultation" className="btn btn-secondary">Book a Consultation</Link>
+              <Link href="/services" className="btn btn-secondary">Explore Services</Link>
             </div>
           </Reveal>
         </div>

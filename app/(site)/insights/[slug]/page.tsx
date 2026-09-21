@@ -59,7 +59,7 @@ export default async function InsightDetailPage({ params }: { params: Promise<{ 
             <>
               <p className="m-0 mb-4 text-lg leading-[1.8] text-body text-pretty">{article.excerpt}</p>
               <p className="m-0 border-t border-line pt-5 text-[13px] leading-[1.7] text-muted">
-                This is a placeholder summary — full article copy is still to be supplied.
+                This is a placeholder summary. Full article copy is still to be supplied.
               </p>
             </>
           )}

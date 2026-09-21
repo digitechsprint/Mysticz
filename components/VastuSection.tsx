@@ -14,7 +14,7 @@ export default function VastuSection() {
             Your premises hold energy. Let them work for your business.
           </h2>
           <p className="m-0 text-[16.5px] leading-[1.8] text-body text-pretty">
-            The energy of a commercial premises influences how it operates — footfall, decision-making, staff retention
+            The energy of a commercial premises influences how it operates: footfall, decision-making, staff retention
             and growth. Most of our work is with businesses: retail outlets, offices, showrooms and factories, alongside
             residential consultations. Guidance is practical, usually through placement, layout and use of space rather
             than structural change.

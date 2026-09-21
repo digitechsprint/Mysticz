@@ -5,7 +5,7 @@ import Section from './Section';
 const certifications = [
   {
     title: 'Chakra & Inner Child Healing Practitioner',
-    issuer: 'IPHM (UK) accredited — Your Safe Self™',
+    issuer: 'IPHM (UK) accredited, Your Safe Self™',
     image: '/images/cert-inner-child-healing.jpg',
   },
   {
@@ -15,7 +15,7 @@ const certifications = [
   },
   {
     title: 'Diploma in Numerology Research',
-    issuer: 'IPHM accredited — Astrology Club',
+    issuer: 'IPHM accredited, Astrology Club',
     image: '/images/cert-numerology-diploma.jpg',
   },
 ];

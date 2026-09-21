@@ -8,7 +8,7 @@ import { pageMetadata } from '@/lib/seo';
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata('/services', {
     title: 'Services',
-    description: 'Vastu consultancy, numerology, inner child healing and Lama Fera energy healing — four practices, used on their own or together.',
+    description: 'Vastu consultancy, numerology, inner child healing and Lama Fera energy healing: four practices, used on their own or together.',
   });
 }
 

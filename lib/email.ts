@@ -29,7 +29,7 @@ export async function sendLeadEmail(lead: LeadInput) {
 
   const html = `
     <div style="font-family: sans-serif; color: #16130F;">
-      <h2 style="margin: 0 0 16px;">${kind} — Mysticz</h2>
+      <h2 style="margin: 0 0 16px;">${kind}, Mysticz</h2>
       <table cellpadding="6" style="border-collapse: collapse;">
         ${rows
           .filter(([, value]) => value)

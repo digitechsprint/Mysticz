@@ -14,7 +14,7 @@ export default function ContactForm() {
         <div className="mb-5 font-display text-[46px] leading-none text-gold-text">✓</div>
         <div className="mb-3.5 font-display text-[30px] font-medium leading-tight text-ink">Enquiry noted</div>
         <p className="m-0 mb-6 max-w-[38ch] text-[15px] leading-[1.8] text-body">
-          Thank you — your enquiry has been received. Bhavika will get back to you within working hours.
+          Thank you. Your enquiry has been received, and Bhavika will get back to you within working hours.
         </p>
         <button
           type="button"
@@ -67,7 +67,7 @@ export default function ContactForm() {
       <button type="submit" disabled={pending} className="btn btn-primary mt-1 justify-center disabled:opacity-60">
         {pending ? 'Sending…' : 'Send Enquiry'}
       </button>
-      {error && <p className="m-0 text-xs leading-[1.6] text-red-600">Something went wrong — please try again.</p>}
+      {error && <p className="m-0 text-xs leading-[1.6] text-red-600">Something went wrong. Please try again.</p>}
     </form>
   );
 }

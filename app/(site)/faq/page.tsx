@@ -28,7 +28,7 @@ export default async function FaqPage() {
               Questions you may have
             </h1>
             <p className="m-0 mb-7 max-w-[38ch] text-base leading-[1.8] text-body">
-              If your question is not here, send it over — a short reply costs nothing.
+              If your question is not here, send it over. A short reply costs nothing.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2.5 border-b border-gold-line pb-2.5 text-[11.5px] font-semibold uppercase tracking-[0.16em] text-olive transition-colors hover:text-gold-hover">
               Ask a question <span className="text-[15px]">→</span>

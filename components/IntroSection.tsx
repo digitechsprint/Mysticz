@@ -26,7 +26,7 @@ export default function IntroSection() {
               </h2>
               <p className="m-0 mb-4 text-base leading-[1.8] text-body text-pretty">
                 Mysticz exists to make ancient systems usable. Vastu Shastra, Vedic numerology and energy work each
-                offer a way of reading patterns — in a building, in a name, in a recurring situation — and translating
+                offer a way of reading patterns, in a building, in a name, in a recurring situation, and translating
                 them into something you can act on.
               </p>
               <p className="m-0 mb-4 text-base leading-[1.8] text-body text-pretty">

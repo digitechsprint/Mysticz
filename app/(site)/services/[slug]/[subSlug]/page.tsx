@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug, subSlug } = await params;
   const found = find(slug, subSlug);
   if (!found) return {};
-  return { title: `${found.item.title} — ${found.service.title}`, description: found.item.copy };
+  return { title: `${found.item.title} | ${found.service.title}`, description: found.item.copy };
 }
 
 export default async function SubServicePage({ params }: { params: Promise<{ slug: string; subSlug: string }> }) {
@@ -37,7 +37,7 @@ export default async function SubServicePage({ params }: { params: Promise<{ slu
             ← {service.title}
           </Link>
           <div className="mb-4 text-[10.5px] font-medium uppercase leading-relaxed tracking-[0.2em] text-gold-text">
-            {service.num} — {service.title}
+            {service.num} · {service.title}
           </div>
           <h1 className="m-0 mb-6 font-display text-[clamp(28px,3.4vw,44px)] font-semibold leading-[1.12] tracking-[-0.01em] text-ink text-pretty">
             {item.title}

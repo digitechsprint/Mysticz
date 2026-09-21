@@ -14,7 +14,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export async function generateMetadata(): Promise<Metadata> {
   return pageMetadata('/', {
-    title: 'Mysticz — Vastu, Numerology & Holistic Wellness',
+    title: 'Vastu, Numerology & Holistic Wellness',
     description:
       'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
   });

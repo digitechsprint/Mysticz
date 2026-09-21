@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="border-t border-gold-line bg-[linear-gradient(180deg,#E9DAB3_0%,#E2CD9B_100%)] text-ink-2">
       <div className="mx-auto grid max-w-shell gap-8 px-5 pb-9 pt-10 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:gap-10 lg:px-[72px]">
         <div>
-          <Image src="/images/logo-lockup.png" alt="Mysticz — Nurture Your Soul" width={412} height={141} className="mb-3.5 h-10 w-auto mix-blend-multiply" />
+          <Image src="/images/logo-lockup.png" alt="Mysticz, Nurture Your Soul" width={412} height={141} className="mb-3.5 h-10 w-auto mix-blend-multiply" />
           <p className="m-0 mb-4 max-w-[34ch] text-[13px] leading-[1.7] text-muted">
             Personalised Vastu, numerology and holistic guidance for greater balance, clarity and wellbeing.
           </p>

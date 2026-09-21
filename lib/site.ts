@@ -19,8 +19,6 @@ export const nav = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Bhavika' },
   { href: '/services', label: 'Services' },
-  { href: '/services/vastu', label: 'Vastu' },
-  { href: '/services/numerology', label: 'Numerology' },
   { href: '/insights', label: 'Insights' },
   { href: '/faq', label: 'FAQs' },
   { href: '/contact', label: 'Contact' },

@@ -15,7 +15,7 @@ export default function BookingForm() {
         <div className="mb-5 font-display text-[46px] leading-none text-gold-text">✓</div>
         <div className="mb-3.5 font-display text-[30px] font-medium leading-tight text-ink">Request received</div>
         <p className="m-0 mb-6 max-w-[38ch] text-[15px] leading-[1.8] text-body">
-          Thank you — your request has been received. Bhavika will reply to confirm your slot.
+          Thank you. Your request has been received, and Bhavika will reply to confirm your slot.
         </p>
         <button
           type="button"
@@ -101,7 +101,7 @@ export default function BookingForm() {
       <button type="submit" disabled={pending} className="btn btn-primary mt-1 justify-center disabled:opacity-60">
         {pending ? 'Sending…' : 'Request Consultation'}
       </button>
-      {error && <p className="m-0 text-xs leading-[1.6] text-red-600">Something went wrong — please try again.</p>}
+      {error && <p className="m-0 text-xs leading-[1.6] text-red-600">Something went wrong. Please try again.</p>}
     </form>
   );
 }
