@@ -18,6 +18,11 @@ const certifications = [
     issuer: 'IPHM accredited, Astrology Club',
     image: '/images/cert-numerology-diploma.jpg',
   },
+  {
+    title: 'Professional Certification in Vastu Shastra',
+    issuer: 'Meenakshi Joshi, Vastu Expert',
+    image: '/images/cert-vastu-shastra.jpg',
+  },
 ];
 
 export default function Certifications() {
@@ -30,11 +35,11 @@ export default function Certifications() {
         </h2>
       </Reveal>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
+      <div className="grid gap-6 sm:grid-cols-2 lg:gap-9">
         {certifications.map((cert, i) => (
           <Reveal key={cert.title} delay={i * 0.07}>
             <div className="relative mb-4 aspect-[4/3] w-full overflow-hidden border border-line-2 bg-card">
-              <Image src={cert.image} alt={cert.title + ' certificate'} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
+              <Image src={cert.image} alt={cert.title + ' certificate'} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
             </div>
             <h3 className="m-0 mb-1.5 font-display text-lg font-semibold leading-[1.3] text-ink">{cert.title}</h3>
             <p className="m-0 text-[13.5px] leading-[1.6] text-muted">{cert.issuer}</p>
