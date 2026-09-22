@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <section className="relative overflow-hidden border-y border-gold-line bg-band">
       <div className="absolute inset-y-0 right-0 hidden w-[48%] sm:block">
-        <Image src="/images/bhavika-studio.jpg" alt="" fill sizes="48vw" className="object-cover object-top" />
+        <Image src="/images/bhavika-lobby.jpg" alt="" fill sizes="48vw" className="object-cover" style={{ objectPosition: '50% 28%' }} />
       </div>
       <div
         className="pointer-events-none absolute inset-0"

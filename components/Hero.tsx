@@ -6,11 +6,11 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { services } from '@/lib/content';
 
-const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
-  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart' },
-  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology chart with numbers and patterns' },
-  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A child embracing a soft toy in warm golden light' },
-  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'Hands held above healing crystals and candles' },
+const HERO_IMAGES: Record<string, { src: string; alt: string; position: string }> = {
+  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 20%' },
+  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology chart with numbers and patterns', position: '75% 50%' },
+  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A child embracing a soft toy in warm golden light', position: '50% 35%' },
+  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'Hands held above healing crystals and candles', position: '50% 30%' },
 };
 
 const slides = services.map((s) => ({
@@ -66,12 +66,13 @@ export default function Hero() {
               priority={index === 0}
               sizes="100vw"
               className="object-cover"
+              style={{ objectPosition: slide.position }}
             />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(100deg, rgba(22,19,15,.88) 0%, rgba(22,19,15,.74) 34%, rgba(22,19,15,.4) 60%, rgba(22,19,15,.12) 84%)',
+                  'linear-gradient(100deg, rgba(22,19,15,.92) 0%, rgba(22,19,15,.82) 30%, rgba(22,19,15,.6) 52%, rgba(22,19,15,.32) 72%, rgba(22,19,15,.12) 92%)',
               }}
             />
           </motion.div>
