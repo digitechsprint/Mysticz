@@ -85,8 +85,8 @@ export const services: Service[] = [
     blurb:
       'Understand the patterns represented by your numbers and gain clarity around important personal and professional decisions.',
     subs: ['Name', 'Business', 'Birth Date', 'Partner Compatibility'],
-    image: IMG + 'sessions-individual.png',
-    imageAlt: 'Handwritten numerology chart',
+    image: IMG + 'sessions-individual.jpg',
+    imageAlt: 'A one-on-one numerology consultation in progress',
     heroHeading: 'The patterns your numbers are already describing',
     heroCopy:
       'Understand the patterns represented by your numbers and gain clarity around important personal and professional decisions.',
@@ -138,8 +138,8 @@ export const services: Service[] = [
     cta: 'Explore Healing',
     blurb: 'A guided process focused on emotional release, self-understanding and personal growth.',
     subs: ['Emotional Release', 'Trauma Healing', 'Self Growth', 'Chakra Balancing'],
-    image: IMG + 'sessions-individual.png',
-    imageAlt: 'Quiet room in soft natural light',
+    image: IMG + 'sessions-individual.jpg',
+    imageAlt: 'A calm, supportive one-on-one healing conversation',
     heroHeading: 'Understanding the cycle before trying to break it',
     heroCopy:
       'A guided process focused on emotional release, self-understanding and personal growth. Past experiences shape how you think, feel and respond, and this is the work of noticing that, gently.',
@@ -192,8 +192,8 @@ export const services: Service[] = [
     blurb:
       'A holistic energy healing approach designed to support emotional balance, clarity and inner harmony.',
     subs: ['Energy Cleansing', 'Chakra Healing', 'Aura Protection'],
-    image: IMG + 'sessions-corporate.png',
-    imageAlt: 'Brass vessel with incense',
+    image: IMG + 'sessions-corporate.jpg',
+    imageAlt: 'A small group discussion in a bright office setting',
     heroHeading: 'When you feel drained and cannot name why',
     heroCopy:
       'A holistic energy healing approach designed to support emotional balance, clarity and inner harmony.',
@@ -238,7 +238,7 @@ export const vastuCategories = [
     title: 'Commercial Vastu',
     copy:
       'For retail outlets, showrooms, offices and customer-facing spaces, with attention to layout, leadership seating and property selection.',
-    image: IMG + 'sessions-individual.png',
+    image: IMG + 'sessions-individual.jpg',
     imageAlt: 'Commercial interior',
   },
   {
@@ -246,7 +246,7 @@ export const vastuCategories = [
     title: 'Industrial Vastu',
     copy:
       'For production and industrial spaces: layout, workspace planning and the areas your team moves through daily.',
-    image: IMG + 'sessions-corporate.png',
+    image: IMG + 'sessions-corporate.jpg',
     imageAlt: 'Industrial workspace',
   },
   {

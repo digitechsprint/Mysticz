@@ -32,7 +32,7 @@ export default function BookConsultationPage() {
           </p>
 
           <div className="relative mb-8 aspect-[4/3] w-full bg-sand">
-            <Image src="/images/sessions-corporate.png" alt="Consultation setting" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/sessions-corporate.jpg" alt="Consultation setting" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
           </div>
 
           <div className="flex flex-col gap-3.5">

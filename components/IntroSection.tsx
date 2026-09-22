@@ -9,7 +9,7 @@ export default function IntroSection() {
       <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[84px]">
         <Reveal>
           <div className="relative aspect-square w-full bg-sand">
-            <Image src="/images/sessions-individual.png" alt="A personalised consultation in progress" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/sessions-individual.jpg" alt="A personalised consultation in progress" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
           </div>
         </Reveal>
 
