@@ -22,7 +22,7 @@ export default function ServicesPage() {
             Ways we can help
           </h1>
           <p className="m-0 max-w-[54ch] text-[17px] leading-[1.75] text-body text-pretty">
-            Four practices, used on their own or together. If you are not sure where to begin, start with a conversation and the right starting point becomes clear.
+            Practices used on their own or together. If you are not sure where to begin, start with a conversation and the right starting point becomes clear.
           </p>
         </Reveal>
       </Section>

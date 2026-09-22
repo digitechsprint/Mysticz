@@ -15,7 +15,7 @@ export default function ServicesGrid() {
             </h2>
           </div>
           <p className="m-0 max-w-[40ch] text-[15px] leading-[1.75] text-muted">
-            Four practices, used on their own or together, depending on what you are trying to resolve.
+            Practices used on their own or together, depending on what you are trying to resolve.
           </p>
         </div>
       </Reveal>

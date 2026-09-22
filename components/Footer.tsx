@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <Image src="/images/logo-lockup.png" alt="Mysticz, Nurture Your Soul" width={412} height={141} className="mb-3.5 h-10 w-auto mix-blend-multiply" />
           <p className="m-0 mb-4 max-w-[34ch] text-[13px] leading-[1.7] text-muted">
-            Personalised Vastu, numerology and holistic guidance for greater balance, clarity and wellbeing.
+            Personalised Vastu, numerology, meditation and holistic guidance for greater balance, clarity and wellbeing.
           </p>
           <div className="flex flex-wrap gap-2">
             <a href={site.social.instagram} target="_blank" rel="noopener" className="border border-line-2 px-2.5 py-2 text-[10.5px] font-medium uppercase tracking-[0.1em] text-ink-2 transition-colors hover:border-gold-line">Instagram</a>

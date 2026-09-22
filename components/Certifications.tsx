@@ -20,7 +20,7 @@ const certifications = [
   },
   {
     title: 'Professional Certification in Vastu Shastra',
-    issuer: 'Meenakshi Joshi, Vastu Expert',
+    issuer: 'Certified Vastu Expert',
     image: '/images/cert-vastu-shastra.jpg',
   },
 ];

@@ -91,9 +91,13 @@ export default function AboutPage() {
         <div className="grid items-start gap-9 lg:grid-cols-2 lg:gap-[72px]">
           <Reveal>
             <div className="label mb-[18px]">Who she works with</div>
-            <h2 className="m-0 font-display text-[clamp(21px,1.8vw,25px)] font-semibold leading-[1.12] text-ink">
+            <h2 className="m-0 mb-8 font-display text-[clamp(21px,1.8vw,25px)] font-semibold leading-[1.12] text-ink">
               Individuals and organisations
             </h2>
+            <div className="relative mb-8 aspect-[4/5] w-full max-w-[380px] overflow-hidden bg-sand">
+              <Image src="/images/bhavika-meditation.jpg" alt="Bhavika Gupta in quiet reflection" fill sizes="(max-width: 1024px) 100vw, 380px" className="object-cover" />
+            </div>
+            <Link href="/book-consultation" className="btn btn-secondary">Book a Consultation</Link>
           </Reveal>
           <div className="flex flex-col gap-7">
             {audiences.map((a, i) => (
