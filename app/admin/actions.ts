@@ -14,9 +14,11 @@ import {
   deleteTestimonial,
   updateArticle,
   updateFaq,
+  updateSiteSettings,
   updateTestimonial,
   upsertSeoMeta,
   type ArticleInput,
+  type CustomMetaTag,
 } from '@/lib/data';
 
 // --- Auth ----------------------------------------------------------------
@@ -54,6 +56,35 @@ export async function saveSeoMeta(formData: FormData) {
     og_image: String(formData.get('og_image') ?? ''),
   });
   revalidatePath(path);
+  revalidatePath('/admin/seo');
+}
+
+// --- Site settings (head tags) --------------------------------------------
+
+/** Parses "name: content" lines into meta tags; blank/malformed lines are skipped. */
+function parseCustomMetaLines(raw: string): CustomMetaTag[] {
+  return raw
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const idx = line.indexOf(':');
+      if (idx === -1) return null;
+      const name = line.slice(0, idx).trim();
+      const content = line.slice(idx + 1).trim();
+      return name && content ? { name, content } : null;
+    })
+    .filter((tag): tag is CustomMetaTag => tag !== null);
+}
+
+export async function saveSiteSettingsAction(formData: FormData) {
+  await updateSiteSettings({
+    google_site_verification: String(formData.get('google_site_verification') ?? '').trim(),
+    bing_site_verification: String(formData.get('bing_site_verification') ?? '').trim(),
+    ga4_measurement_id: String(formData.get('ga4_measurement_id') ?? '').trim(),
+    custom_meta: parseCustomMetaLines(String(formData.get('custom_meta_lines') ?? '')),
+  });
+  revalidatePath('/', 'layout');
   revalidatePath('/admin/seo');
 }
 

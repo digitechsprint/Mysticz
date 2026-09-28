@@ -53,6 +53,40 @@ export interface DbLead {
   created_at: string;
 }
 
+// --- Site settings (head tags) ------------------------------------------
+
+export interface CustomMetaTag {
+  name: string;
+  content: string;
+}
+
+export interface SiteSettings {
+  id: string;
+  google_site_verification: string | null;
+  bing_site_verification: string | null;
+  ga4_measurement_id: string | null;
+  custom_meta: CustomMetaTag[];
+  updated_at: string;
+}
+
+export async function getSiteSettings(): Promise<SiteSettings | null> {
+  const { data, error } = await supabaseAdmin().from('site_settings').select('*').eq('id', 'default').maybeSingle();
+  if (error) return null;
+  return data;
+}
+
+export async function updateSiteSettings(fields: {
+  google_site_verification: string;
+  bing_site_verification: string;
+  ga4_measurement_id: string;
+  custom_meta: CustomMetaTag[];
+}) {
+  const { error } = await supabaseAdmin()
+    .from('site_settings')
+    .upsert({ id: 'default', ...fields, updated_at: new Date().toISOString() }, { onConflict: 'id' });
+  if (error) throw new Error(error.message);
+}
+
 // --- SEO -------------------------------------------------------------
 
 /** Known site routes the admin can attach SEO overrides to. */
