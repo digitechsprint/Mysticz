@@ -86,7 +86,7 @@ export const services: Service[] = [
       'Understand the patterns represented by your numbers and gain clarity around important personal and professional decisions.',
     subs: ['Name', 'Business', 'Birth Date', 'Partner Compatibility'],
     image: IMG + 'numerology-card.jpg',
-    imageAlt: 'A one-on-one numerology consultation in progress',
+    imageAlt: 'A numerology chart, astrolabe and crystals on a wooden desk',
     heroHeading: 'The patterns your numbers are already describing',
     heroCopy:
       'Understand the patterns represented by your numbers and gain clarity around important personal and professional decisions.',
@@ -139,7 +139,7 @@ export const services: Service[] = [
     blurb: 'A guided process focused on emotional release, self-understanding and personal growth.',
     subs: ['Emotional Release', 'Trauma Healing', 'Self Growth', 'Chakra Balancing'],
     image: IMG + 'inner-child-healing-card.jpg',
-    imageAlt: 'A calm, supportive one-on-one healing conversation',
+    imageAlt: 'A calm energy healing session with crystals and a singing bowl',
     heroHeading: 'Understanding the cycle before trying to break it',
     heroCopy:
       'A guided process focused on emotional release, self-understanding and personal growth. Past experiences shape how you think, feel and respond, and this is the work of noticing that, gently.',
@@ -193,7 +193,7 @@ export const services: Service[] = [
       'A holistic energy healing approach designed to support emotional balance, clarity and inner harmony.',
     subs: ['Energy Cleansing', 'Chakra Healing', 'Aura Protection'],
     image: IMG + 'lama-fera-card.jpg',
-    imageAlt: 'A small group discussion in a bright office setting',
+    imageAlt: 'A Lama Fera healing ritual on a mountainside terrace',
     heroHeading: 'When you feel drained and cannot name why',
     heroCopy:
       'A holistic energy healing approach designed to support emotional balance, clarity and inner harmony.',
