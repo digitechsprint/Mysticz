@@ -6,11 +6,11 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { services } from '@/lib/content';
 
-const HERO_IMAGES: Record<string, { src: string; alt: string; position: string }> = {
-  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 12%' },
-  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns', position: '35% 65%' },
-  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden', position: '45% 55%' },
-  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman', position: 'center' },
+const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
+  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart' },
+  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns' },
+  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden' },
+  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman' },
 };
 
 const slides = services.map((s) => ({
@@ -59,20 +59,29 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: [0.22, 0.61, 0.36, 1] }}
             className="absolute inset-0"
           >
+            {/* Blurred, scaled-up backdrop so the frame is always filled without cropping the real image */}
+            <Image
+              src={slide.src}
+              alt=""
+              aria-hidden
+              fill
+              sizes="100vw"
+              className="scale-125 object-cover opacity-70 blur-3xl"
+            />
+            {/* The actual photo, shown in full with no cropping */}
             <Image
               src={slide.src}
               alt={slide.alt}
               fill
               priority={index === 0}
               sizes="100vw"
-              className="object-cover"
-              style={{ objectPosition: slide.position }}
+              className="object-contain"
             />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(100deg, rgba(22,19,15,.92) 0%, rgba(22,19,15,.82) 30%, rgba(22,19,15,.6) 52%, rgba(22,19,15,.32) 72%, rgba(22,19,15,.12) 92%)',
+                  'linear-gradient(100deg, rgba(22,19,15,.85) 0%, rgba(22,19,15,.68) 30%, rgba(22,19,15,.4) 52%, rgba(22,19,15,.18) 72%, rgba(22,19,15,0) 92%)',
               }}
             />
           </motion.div>
