@@ -6,11 +6,13 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { services } from '@/lib/content';
 
-const HERO_IMAGES: Record<string, { src: string; alt: string }> = {
-  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart' },
-  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns' },
-  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden' },
-  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman' },
+// fit: 'cover' once an image is supplied at the ~2:1 hero spec (fills edge-to-edge,
+// no blur bars); 'contain' is the safe fallback for images that aren't that shape yet.
+const HERO_IMAGES: Record<string, { src: string; alt: string; fit: 'cover' | 'contain' }> = {
+  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', fit: 'cover' },
+  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns', fit: 'contain' },
+  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden', fit: 'contain' },
+  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman', fit: 'contain' },
 };
 
 const slides = services.map((s) => ({
@@ -59,23 +61,24 @@ export default function Hero() {
             transition={{ duration: 0.9, ease: [0.22, 0.61, 0.36, 1] }}
             className="absolute inset-0"
           >
-            {/* Blurred, scaled-up backdrop so the frame is always filled without cropping the real image */}
-            <Image
-              src={slide.src}
-              alt=""
-              aria-hidden
-              fill
-              sizes="100vw"
-              className="scale-125 object-cover opacity-70 blur-3xl"
-            />
-            {/* The actual photo, shown in full with no cropping */}
+            {slide.fit === 'contain' && (
+              // Blurred, scaled-up backdrop so the frame is always filled without cropping the real image
+              <Image
+                src={slide.src}
+                alt=""
+                aria-hidden
+                fill
+                sizes="100vw"
+                className="scale-125 object-cover opacity-70 blur-3xl"
+              />
+            )}
             <Image
               src={slide.src}
               alt={slide.alt}
               fill
               priority={index === 0}
               sizes="100vw"
-              className="object-contain"
+              className={slide.fit === 'cover' ? 'object-cover' : 'object-contain'}
             />
             <div
               className="absolute inset-0"
