@@ -7,9 +7,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { services } from '@/lib/content';
 
 const HERO_IMAGES: Record<string, { src: string; alt: string; position: string }> = {
-  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 35%' },
-  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns', position: 'center' },
-  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden', position: '40% 40%' },
+  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 12%' },
+  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns', position: '35% 65%' },
+  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden', position: '45% 55%' },
   'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman', position: 'center' },
 };
 
@@ -125,7 +125,7 @@ export default function Hero() {
           type="button"
           aria-label="Previous slide"
           onClick={() => go(index - 1)}
-          className="absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center border border-white/40 bg-ink/30 p-2.5 text-white backdrop-blur-sm transition-colors hover:bg-ink/55 sm:flex"
+          className="absolute left-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center border border-white/40 bg-ink/30 p-2.5 text-white backdrop-blur-sm transition-colors hover:bg-ink/55 lg:flex"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M15 18l-6-6 6-6" />
@@ -135,7 +135,7 @@ export default function Hero() {
           type="button"
           aria-label="Next slide"
           onClick={() => go(index + 1)}
-          className="absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center border border-white/40 bg-ink/30 p-2.5 text-white backdrop-blur-sm transition-colors hover:bg-ink/55 sm:flex"
+          className="absolute right-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center border border-white/40 bg-ink/30 p-2.5 text-white backdrop-blur-sm transition-colors hover:bg-ink/55 lg:flex"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M9 6l6 6-6 6" />
