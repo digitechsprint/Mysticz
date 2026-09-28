@@ -31,8 +31,8 @@ export const services: Service[] = [
     blurb:
       'Vastu guidance for the spaces where you live and work: practical, energy-conscious solutions that work within the space you already have.',
     subs: ['Commercial', 'Industrial', 'Office', 'Residential'],
-    image: IMG + 'vastu-interior.jpg',
-    imageAlt: 'Sunlit staircase in a modern home, natural light and warm wood floors',
+    image: IMG + 'vastu-card.jpg',
+    imageAlt: 'A bright, plant-filled home office with an architectural floor plan',
     heroHeading: 'Vastu for homes, offices and the businesses you run',
     heroCopy:
       'Specialised Vastu consultancy for homes and businesses, with practical, non-demolition solutions wherever possible.',
