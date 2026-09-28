@@ -7,10 +7,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { services } from '@/lib/content';
 
 const HERO_IMAGES: Record<string, { src: string; alt: string; position: string }> = {
-  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 20%' },
-  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology chart with numbers and patterns', position: '75% 50%' },
-  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A child embracing a soft toy in warm golden light', position: '50% 35%' },
-  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'Hands held above healing crystals and candles', position: '50% 30%' },
+  vastu: { src: '/images/hero-vastu.jpg', alt: 'A model home set on a Vastu compass chart', position: '50% 35%' },
+  numerology: { src: '/images/hero-numerology.jpg', alt: 'A numerology dial with numbers and patterns', position: 'center' },
+  'inner-child-healing': { src: '/images/hero-inner-child-healing.jpg', alt: 'A woman and her glowing inner child in a starlit garden', position: '40% 40%' },
+  'lama-fera': { src: '/images/hero-lama-fera.jpg', alt: 'A healer performing an energy ritual over a meditating woman', position: 'center' },
 };
 
 const slides = services.map((s) => ({
