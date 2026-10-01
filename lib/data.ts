@@ -54,36 +54,23 @@ export interface DbLead {
 }
 
 // --- Site settings (head tags) ------------------------------------------
+// Simple key/value store. The one key the site reads today is
+// 'custom_head_code': a raw blob of <meta>/<link>/<script> tags, pasted
+// as-is from whatever platform asked for them (Search Console, GA4, Meta
+// Pixel, etc.), parsed and injected into every page's <head>.
 
-export interface CustomMetaTag {
-  name: string;
-  content: string;
+const HEAD_CODE_KEY = 'custom_head_code';
+
+export async function getCustomHeadCode(): Promise<string> {
+  const { data, error } = await supabaseAdmin().from('site_settings').select('value').eq('key', HEAD_CODE_KEY).maybeSingle();
+  if (error || !data) return '';
+  return data.value ?? '';
 }
 
-export interface SiteSettings {
-  id: string;
-  google_site_verification: string | null;
-  bing_site_verification: string | null;
-  ga4_measurement_id: string | null;
-  custom_meta: CustomMetaTag[];
-  updated_at: string;
-}
-
-export async function getSiteSettings(): Promise<SiteSettings | null> {
-  const { data, error } = await supabaseAdmin().from('site_settings').select('*').eq('id', 'default').maybeSingle();
-  if (error) return null;
-  return data;
-}
-
-export async function updateSiteSettings(fields: {
-  google_site_verification: string;
-  bing_site_verification: string;
-  ga4_measurement_id: string;
-  custom_meta: CustomMetaTag[];
-}) {
+export async function updateCustomHeadCode(value: string) {
   const { error } = await supabaseAdmin()
     .from('site_settings')
-    .upsert({ id: 'default', ...fields, updated_at: new Date().toISOString() }, { onConflict: 'id' });
+    .upsert({ key: HEAD_CODE_KEY, value, updated_at: new Date().toISOString() }, { onConflict: 'key' });
   if (error) throw new Error(error.message);
 }
 

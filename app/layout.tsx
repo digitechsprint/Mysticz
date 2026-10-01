@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Manrope, Playfair_Display } from 'next/font/google';
-import Script from 'next/script';
-import { getSiteSettings } from '@/lib/data';
+import { getCustomHeadCode } from '@/lib/data';
+import { parseHeadCode } from '@/lib/headCode';
 import { site } from '@/lib/site';
 import './globals.css';
 
@@ -20,36 +20,26 @@ const sans = Manrope({
   display: 'swap',
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const settings = await getSiteSettings();
-  const title = `${site.name} | Vastu, Numerology & Holistic Wellness`;
-  const description =
-    'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.';
-
-  return {
-    metadataBase: new URL(site.url),
-    title: { default: title, template: `%s | ${site.name}` },
-    description,
-    openGraph: {
-      title,
-      description,
-      url: site.url,
-      siteName: site.name,
-      images: ['/images/logo-lockup.png'],
-      locale: 'en_IN',
-      type: 'website',
-    },
-    verification: {
-      google: settings?.google_site_verification || undefined,
-      other: settings?.bing_site_verification ? { 'msvalidate.01': settings.bing_site_verification } : undefined,
-    },
-  };
-}
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: { default: `${site.name} | Vastu, Numerology & Holistic Wellness`, template: `%s | ${site.name}` },
+  description:
+    'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
+  openGraph: {
+    title: `${site.name} | Vastu, Numerology & Holistic Wellness`,
+    description:
+      'Practical Vastu consultancy, numerology, meditation and holistic healing with Bhavika Gupta. Personalised guidance for homes, offices and businesses across Delhi NCR and online.',
+    url: site.url,
+    siteName: site.name,
+    images: ['/images/logo-lockup.png'],
+    locale: 'en_IN',
+    type: 'website',
+  },
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const settings = await getSiteSettings();
-  const customMeta = settings?.custom_meta ?? [];
-  const ga4Id = settings?.ga4_measurement_id;
+  const headCode = await getCustomHeadCode();
+  const headTags = parseHeadCode(headCode);
 
   const localBusinessJsonLd = JSON.stringify({
     '@context': 'https://schema.org',
@@ -71,25 +61,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <head>
-        {customMeta.map((tag) => (
-          <meta key={tag.name} name={tag.name} content={tag.content} />
-        ))}
+        {headTags.map((tag, i) => {
+          if (tag.type === 'meta') return <meta key={i} {...tag.attrs} />;
+          if (tag.type === 'link') return <link key={i} {...tag.attrs} />;
+          return <script key={i} {...tag.attrs} dangerouslySetInnerHTML={{ __html: tag.content }} />;
+        })}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: localBusinessJsonLd }} />
       </head>
-      <body className="font-sans">
-        {ga4Id && (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`} strategy="afterInteractive" />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${ga4Id}');`}
-            </Script>
-          </>
-        )}
-        {children}
-      </body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }
