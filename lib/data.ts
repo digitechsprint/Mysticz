@@ -55,11 +55,18 @@ export interface DbLead {
 
 // --- Site settings (head tags) ------------------------------------------
 // Simple key/value store. The one key the site reads today is
-// 'custom_head_code': a raw blob of <meta>/<link>/<script> tags, pasted
-// as-is from whatever platform asked for them (Search Console, GA4, Meta
-// Pixel, etc.), parsed and injected into every page's <head>.
+// 'mysticz_custom_head_code': a raw blob of <meta>/<link>/<script> tags,
+// pasted as-is from whatever platform asked for them (Search Console, GA4,
+// Meta Pixel, etc.), parsed and injected into every page's <head>.
+//
+// This Supabase project is shared with another client site (fovestta.com),
+// whose codebase independently built the same feature against this same
+// site_settings table. The key used to be the unprefixed 'custom_head_code',
+// which both sites happened to read/write identically -- whichever site
+// saved last silently overwrote the other's GA/GSC tags site-wide. Keep
+// this key namespaced so it can't collide again.
 
-const HEAD_CODE_KEY = 'custom_head_code';
+const HEAD_CODE_KEY = 'mysticz_custom_head_code';
 
 export async function getCustomHeadCode(): Promise<string> {
   const { data, error } = await supabaseAdmin().from('site_settings').select('value').eq('key', HEAD_CODE_KEY).maybeSingle();
