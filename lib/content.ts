@@ -313,9 +313,9 @@ export const testimonials: Testimonial[] = [
 ];
 
 /* Client messages and video shared by Bhavika, shown as-is on the home page. */
-/* Quotes are verbatim excerpts from the screenshots; keep them word for word. */
+/* Quotes are verbatim excerpts from client messages; keep them word for word. */
 export interface VideoTestimonial { name: string; role: string; src: string; poster: string }
-export interface MessageTestimonial { name: string; role: string; service: string; quote: string; screenshots: string[] }
+export interface MessageTestimonial { name: string; role: string; service: string; quote: string }
 
 export const videoTestimonial: VideoTestimonial = {
   name: 'Dipt Prakash',
@@ -330,14 +330,12 @@ export const messageTestimonials: MessageTestimonial[] = [
     role: 'Business Owner, Factory',
     service: 'Remedies',
     quote: 'The remedies you suggested regarding his health have really made a difference. After following them, his health has improved quite a lot, and we can also feel a lot of positivity at home. Many things have started falling into place and getting sorted out.',
-    screenshots: ['/testimonials/vishal-gupta.jpg'],
   },
   {
     name: 'Somya Bhanot',
     role: 'JCI Ludhiana',
     service: 'Guidance & Crystals',
     quote: 'Whatever you told me till now helped me so much. Things are progressing ahead. I have rarely seen anyone this helpful.',
-    screenshots: ['/testimonials/somya-bhanot-1.jpg', '/testimonials/somya-bhanot-2.jpg'],
   },
 ];
 
