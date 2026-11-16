@@ -313,21 +313,32 @@ export const testimonials: Testimonial[] = [
 ];
 
 /* Client messages and video shared by Bhavika, shown as-is on the home page. */
-export interface ProofTestimonial {
-  name: string;
-  role: string;
-  kind: 'image' | 'video';
-  src: string;
-  poster?: string;
-  width: number;
-  height: number;
-}
+/* Quotes are verbatim excerpts from the screenshots; keep them word for word. */
+export interface VideoTestimonial { name: string; role: string; src: string; poster: string }
+export interface MessageTestimonial { name: string; role: string; service: string; quote: string; screenshots: string[] }
 
-export const proofTestimonials: ProofTestimonial[] = [
-  { name: 'Dipt Prakash', role: 'Teacher', kind: 'video', src: '/testimonials/dipt-prakash.mp4', poster: '/testimonials/dipt-prakash-poster.jpg', width: 576, height: 960 },
-  { name: 'Vishal Gupta', role: 'Business Owner, Factory', kind: 'image', src: '/testimonials/vishal-gupta.jpg', width: 900, height: 1358 },
-  { name: 'Somya Bhanot', role: 'JCI Ludhiana', kind: 'image', src: '/testimonials/somya-bhanot-1.jpg', width: 800, height: 1527 },
-  { name: 'Somya Bhanot', role: 'JCI Ludhiana', kind: 'image', src: '/testimonials/somya-bhanot-2.jpg', width: 740, height: 1602 },
+export const videoTestimonial: VideoTestimonial = {
+  name: 'Dipt Prakash',
+  role: 'Teacher',
+  src: '/testimonials/dipt-prakash.mp4',
+  poster: '/testimonials/dipt-prakash-poster.jpg',
+};
+
+export const messageTestimonials: MessageTestimonial[] = [
+  {
+    name: 'Vishal Gupta',
+    role: 'Business Owner, Factory',
+    service: 'Remedies',
+    quote: 'The remedies you suggested regarding his health have really made a difference. After following them, his health has improved quite a lot, and we can also feel a lot of positivity at home. Many things have started falling into place and getting sorted out.',
+    screenshots: ['/testimonials/vishal-gupta.jpg'],
+  },
+  {
+    name: 'Somya Bhanot',
+    role: 'JCI Ludhiana',
+    service: 'Guidance & Crystals',
+    quote: 'Whatever you told me till now helped me so much. Things are progressing ahead. I have rarely seen anyone this helpful.',
+    screenshots: ['/testimonials/somya-bhanot-1.jpg', '/testimonials/somya-bhanot-2.jpg'],
+  },
 ];
 
 export interface Faq { q: string; a: string }
