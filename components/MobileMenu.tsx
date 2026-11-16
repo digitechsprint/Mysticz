@@ -19,7 +19,7 @@ export default function MobileMenu({ open, onClose }: { open: boolean; onClose: 
     <div className="fixed inset-0 z-[70] flex flex-col overflow-y-auto bg-ivory px-5 py-5 sm:px-10">
       <div className="flex items-center justify-between">
         <Link href="/" onClick={onClose} aria-label="Mysticz home">
-          <Image src="/images/logo-wordmark.png" alt="Mysticz" width={391} height={96} className="h-8 w-auto mix-blend-multiply" />
+          <Image src="/images/logo-lockup.png" alt="Mysticz, Nurture Your Soul" width={495} height={144} className="h-11 w-auto mix-blend-multiply" />
         </Link>
         <button type="button" aria-label="Close menu" onClick={onClose} className="font-display text-4xl leading-none text-ink-2">
           ×

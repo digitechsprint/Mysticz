@@ -23,6 +23,26 @@ const certifications = [
     issuer: 'Certified Vastu Expert',
     image: '/images/cert-vastu-shastra.jpg',
   },
+  {
+    title: 'Basic Vastu Course (Vastu-Rishi)',
+    issuer: 'International Institute of Vaidic Culture (IIVC)',
+    image: '/images/cert-iivc-vastu-basic.jpg',
+  },
+  {
+    title: 'Advanced Vastu Course (Vastu Visharad)',
+    issuer: 'International Institute of Vaidic Culture (IIVC)',
+    image: '/images/cert-iivc-vastu-advanced.jpg',
+  },
+  {
+    title: 'Professional Vastu Course (Vastu Acharya)',
+    issuer: 'International Institute of Vaidic Culture (IIVC)',
+    image: '/images/cert-iivc-vastu-professional.jpg',
+  },
+  {
+    title: 'Remedial Vastu Course',
+    issuer: 'International Institute of Vaidic Culture (IIVC)',
+    image: '/images/cert-iivc-vastu-remedial.jpg',
+  },
 ];
 
 export default function Certifications() {

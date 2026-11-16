@@ -5,6 +5,7 @@ import InsightsSection from '@/components/InsightsSection';
 import IntroSection from '@/components/IntroSection';
 import ProcessSection from '@/components/ProcessSection';
 import ServicesGrid from '@/components/ServicesGrid';
+import TestimonialProof from '@/components/TestimonialProof';
 import Testimonials from '@/components/Testimonials';
 import TrustStrip from '@/components/TrustStrip';
 import WhyMysticz from '@/components/WhyMysticz';
@@ -33,6 +34,7 @@ export default async function HomePage() {
       <ProcessSection />
       <WhyMysticz />
       <Testimonials items={testimonials} />
+      <TestimonialProof />
       <InsightsSection />
       <CTASection />
     </>

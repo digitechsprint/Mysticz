@@ -312,6 +312,24 @@ export const testimonials: Testimonial[] = [
   { name: 'Riddhi Tulsiyan', service: 'Vastu & Numerology', quote: 'After Bhavika’s Vastu correction guidance, my business has seen positive changes. Even her Numerology consultation was accurate, and she heard with extreme patience.' },
 ];
 
+/* Client messages and video shared by Bhavika, shown as-is on the home page. */
+export interface ProofTestimonial {
+  name: string;
+  role: string;
+  kind: 'image' | 'video';
+  src: string;
+  poster?: string;
+  width: number;
+  height: number;
+}
+
+export const proofTestimonials: ProofTestimonial[] = [
+  { name: 'Dipt Prakash', role: 'Teacher', kind: 'video', src: '/testimonials/dipt-prakash.mp4', poster: '/testimonials/dipt-prakash-poster.jpg', width: 576, height: 960 },
+  { name: 'Vishal Gupta', role: 'Business Owner, Factory', kind: 'image', src: '/testimonials/vishal-gupta.jpg', width: 900, height: 1358 },
+  { name: 'Somya Bhanot', role: 'JCI Ludhiana', kind: 'image', src: '/testimonials/somya-bhanot-1.jpg', width: 800, height: 1527 },
+  { name: 'Somya Bhanot', role: 'JCI Ludhiana', kind: 'image', src: '/testimonials/somya-bhanot-2.jpg', width: 740, height: 1602 },
+];
+
 export interface Faq { q: string; a: string }
 
 export const faqs: Faq[] = [

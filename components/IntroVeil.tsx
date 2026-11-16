@@ -23,8 +23,8 @@ export default function IntroVeil() {
       <Image
         src="/images/logo-lockup.png"
         alt=""
-        width={412}
-        height={141}
+        width={495}
+        height={144}
         priority
         className="h-16 w-auto mix-blend-multiply sm:h-[92px]"
         style={{ animation: 'markRise 1.1s cubic-bezier(.22,.61,.36,1) both' }}
